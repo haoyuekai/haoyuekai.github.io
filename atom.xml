@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>竹林居士</title>
+  
+  <subtitle>我自信，我成功，我快乐</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-06-04T08:16:55.056Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>郝月凯</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/06/04/hello-world/"/>
+    <id>http://yoursite.com/2018/06/04/hello-world/</id>
+    <published>2018-06-04T08:16:55.056Z</published>
+    <updated>2018-06-04T08:16:55.056Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
