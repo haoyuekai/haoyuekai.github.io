@@ -1927,7 +1927,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #bf38ff;
+  background: #aa966c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3224,4 +3224,9 @@ img:hover {
   .pagination {
     margin: 8px 0 0;
   }
+}
+body {
+  background: url("/images/bg3.png");
+  background-size: 100%;
+  background-attachment: fixed;
 }
