@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-08T01:28:30.628Z</updated>
+  <updated>2018-06-12T03:45:30.917Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,20 +17,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>图灵机器人</title>
-    <link href="http://yoursite.com/2018/06/07/%E5%9B%BE%E7%81%B5%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
-    <id>http://yoursite.com/2018/06/07/图灵机器人/</id>
+    <title>关于ES6箭头函数</title>
+    <link href="http://yoursite.com/2018/06/07/%E5%85%B3%E4%BA%8EES6%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0/"/>
+    <id>http://yoursite.com/2018/06/07/关于ES6箭头函数/</id>
     <published>2018-06-07T09:34:02.000Z</published>
-    <updated>2018-06-08T01:28:30.628Z</updated>
+    <updated>2018-06-12T03:45:30.917Z</updated>
     
     <summary type="html">
     
+      
+      
+        
+        
+          &lt;p&gt;ES6发布到现在马上就要三年了，作为一个比较守旧的前端，一直也没有个系统的了解（&lt;em&gt;主要是在小公司上班，工作中用不到啊，懒癌晚期的我，又没有足够的动力去系统的学习&lt;/em&gt;）。&lt;/p&gt;
+&lt;p&gt;最近公司项目（外包做的）bug频繁出现，有了用Vue重构的想法。至于为什么不用
+        
+      
+    
     </summary>
     
-      <category term="杂项" scheme="http://yoursite.com/categories/%E6%9D%82%E9%A1%B9/"/>
+      <category term="Js" scheme="http://yoursite.com/categories/Js/"/>
     
     
-      <category term="AI" scheme="http://yoursite.com/tags/AI/"/>
+      <category term="ES6" scheme="http://yoursite.com/tags/ES6/"/>
     
   </entry>
   
