@@ -96,7 +96,7 @@
 <meta property="og:site_name" content="竹林居士">
 <meta property="og:description" content="ES6发布到现在马上就要三年了，作为一个比较守旧的前端，一直也没有个系统的了解（主要是在小公司上班，工作中用不到啊，懒癌晚期的我，又没有足够的动力去系统的学习）。 最近公司项目（外包做的）bug频繁出现，有了用Vue重构的想法。至于为什么不用React，大概是觉得相比较而言，Vue更简单一些吧。在使用Vue脚手架的时候，接触到箭头函数，也是时候应该了解一下了。 好了，废话不多说了，下面说一下关于箭">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-12T05:34:36.753Z">
+<meta property="og:updated_time" content="2018-06-12T05:42:18.705Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于ES6箭头函数">
 <meta name="twitter:description" content="ES6发布到现在马上就要三年了，作为一个比较守旧的前端，一直也没有个系统的了解（主要是在小公司上班，工作中用不到啊，懒癌晚期的我，又没有足够的动力去系统的学习）。 最近公司项目（外包做的）bug频繁出现，有了用Vue重构的想法。至于为什么不用React，大概是觉得相比较而言，Vue更简单一些吧。在使用Vue脚手架的时候，接触到箭头函数，也是时候应该了解一下了。 好了，废话不多说了，下面说一下关于箭">
@@ -432,7 +432,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">let func = (value, num) =&gt; (&#123;total: value * num&#125;);</span><br></pre></td></tr></table></figure>
 <p>与变量解构结合：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">let func = (&#123;value, num&#125;) =&gt; (&#123;total: value * num&#125;)</span><br><span class="line"></span><br><span class="line">// 使用</span><br><span class="line">var result = func(&#123;</span><br><span class="line">    value: 10,</span><br><span class="line">    num: 10</span><br><span class="line">&#125;)</span><br><span class="line">console.log(result); // &#123;total: 100&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="比较"><a href="#比较" class="headerlink" title="比较"></a>比较</h2><h3 id="1-没有this"><a href="#1-没有this" class="headerlink" title="1.没有this"></a>1.没有this</h3><p><strong>箭头函数没有 this，所以需要通过查找作用域链来确定 this 的值。</strong></p>
+<h2 id="比较"><a href="#比较" class="headerlink" title="比较"></a>比较</h2><h3 id="没有this"><a href="#没有this" class="headerlink" title="没有this"></a>没有this</h3><p><strong>箭头函数没有 this，所以需要通过查找作用域链来确定 this 的值。</strong></p>
 <p>这就意味着如果箭头函数被非箭头函数包含，this 绑定的就是最近一层非箭头函数的 this。</p>
 <p>模拟一个实际开发中的例子：</p>
 <p>我们的需求是点击一个按钮，改变该按钮的背景色。</p>
@@ -460,21 +460,21 @@
 <p>在这里再额外提一点，就是注意 bindEvent 和  setBgColor 在这里使用的是普通函数的形式，而非箭头函数，如果我们改成箭头函数，会导致函数里的 this 指向 window 对象 (非严格模式下)。</p>
 <p>最后，因为箭头函数没有 this，所以也不能用 call()、apply()、bind() 这些方法改变 this 的指向，可以看一个例子：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var value = 1;</span><br><span class="line">var result = (() =&gt; this.value).bind(&#123;value: 2&#125;)();</span><br><span class="line">console.log(result); // 1</span><br></pre></td></tr></table></figure>
-<h3 id="2-没有-arguments"><a href="#2-没有-arguments" class="headerlink" title="2. 没有 arguments"></a>2. 没有 arguments</h3><p>箭头函数没有自己的 arguments对象，这不一定是件坏事，因为箭头函数可以访问外围函数的 arguments 对象：</p>
+<h3 id="没有-arguments"><a href="#没有-arguments" class="headerlink" title="没有 arguments"></a>没有 arguments</h3><p>箭头函数没有自己的 arguments对象，这不一定是件坏事，因为箭头函数可以访问外围函数的 arguments 对象：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function constant() &#123;</span><br><span class="line">    return () =&gt; arguments[0]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var result = constant(1);</span><br><span class="line">console.log(result()); // 1</span><br></pre></td></tr></table></figure>
 <p>那如果我们就是要访问箭头函数的参数呢？</p>
 <p>你可以通过命名参数或者 rest 参数的形式访问参数:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">let nums = (...nums) =&gt; nums;</span><br></pre></td></tr></table></figure>
-<h3 id="3-不能通过-new-关键字调用"><a href="#3-不能通过-new-关键字调用" class="headerlink" title="3. 不能通过 new 关键字调用"></a>3. 不能通过 new 关键字调用</h3><p>JavaScript 函数有两个内部方法：[[Call]] 和 [[Construct]]。</p>
+<h3 id="不能通过-new-关键字调用"><a href="#不能通过-new-关键字调用" class="headerlink" title="不能通过 new 关键字调用"></a>不能通过 new 关键字调用</h3><p>JavaScript 函数有两个内部方法：[[Call]] 和 [[Construct]]。</p>
 <p>当通过 new 调用函数时，执行 [[Construct]] 方法，创建一个实例对象，然后再执行函数体，将 this 绑定到实例上。</p>
 <p>当直接调用的时候，执行 [[Call]] 方法，直接执行函数体。</p>
 <p>箭头函数并没有 [[Construct]] 方法，不能被用作构造函数，如果通过 new 的方式调用，会报错。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var Foo = () =&gt; &#123;&#125;;</span><br><span class="line">var foo = new Foo(); // TypeError: Foo is not a constructor</span><br></pre></td></tr></table></figure>
-<h3 id="4-没有-new-target"><a href="#4-没有-new-target" class="headerlink" title="4. 没有 new.target"></a>4. 没有 new.target</h3><p>因为不能使用 new 调用，所以也没有 new.target 值。</p>
+<h3 id="没有-new-target"><a href="#没有-new-target" class="headerlink" title="没有 new.target"></a>没有 new.target</h3><p>因为不能使用 new 调用，所以也没有 new.target 值。</p>
 <p>关于 new.target，可以参考<br><a href="http://es6.ruanyifeng.com/#docs/class#new-target-%E5%B1%9E%E6%80%A7" target="_blank" rel="noopener">es6.ruanyifeng.com/#docs/class…</a></p>
-<h3 id="5-没有原型"><a href="#5-没有原型" class="headerlink" title="5. 没有原型"></a>5. 没有原型</h3><p>由于不能使用 new 调用箭头函数，所以也没有构建原型的需求，于是箭头函数也不存在 prototype 这个属性。</p>
+<h3 id="没有原型"><a href="#没有原型" class="headerlink" title="没有原型"></a>没有原型</h3><p>由于不能使用 new 调用箭头函数，所以也没有构建原型的需求，于是箭头函数也不存在 prototype 这个属性。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var Foo = () =&gt; &#123;&#125;;</span><br><span class="line">console.log(Foo.prototype); // undefined</span><br></pre></td></tr></table></figure>
-<h3 id="6-没有-super"><a href="#6-没有-super" class="headerlink" title="6. 没有 super"></a>6. 没有 super</h3><p>连原型都没有，自然也不能通过 super 来访问原型的属性，所以箭头函数也是没有 super 的，不过跟 this、arguments、new.target 一样，这些值由外围最近一层非箭头函数决定。</p>
+<h3 id="没有-super"><a href="#没有-super" class="headerlink" title="没有 super"></a>没有 super</h3><p>连原型都没有，自然也不能通过 super 来访问原型的属性，所以箭头函数也是没有 super 的，不过跟 this、arguments、new.target 一样，这些值由外围最近一层非箭头函数决定。</p>
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>最后，关于箭头函数，引用 MDN 的介绍就是：</p>
 <blockquote>
 <p>An arrow function expression has a shorter syntax than a function expression and does not have its own this, arguments, super, or new.target. These function expressions are best suited for non-method functions, and they cannot be used as constructors.</p>
@@ -738,7 +738,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本语法"><span class="nav-number">1.</span> <span class="nav-text">基本语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#比较"><span class="nav-number">2.</span> <span class="nav-text">比较</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-没有this"><span class="nav-number">2.1.</span> <span class="nav-text">1.没有this</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-没有-arguments"><span class="nav-number">2.2.</span> <span class="nav-text">2. 没有 arguments</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-不能通过-new-关键字调用"><span class="nav-number">2.3.</span> <span class="nav-text">3. 不能通过 new 关键字调用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-没有-new-target"><span class="nav-number">2.4.</span> <span class="nav-text">4. 没有 new.target</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-没有原型"><span class="nav-number">2.5.</span> <span class="nav-text">5. 没有原型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-没有-super"><span class="nav-number">2.6.</span> <span class="nav-text">6. 没有 super</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">2.7.</span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自执行函数"><span class="nav-number">3.</span> <span class="nav-text">自执行函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ES6系列"><span class="nav-number">4.</span> <span class="nav-text">ES6系列</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本语法"><span class="nav-number">1.</span> <span class="nav-text">基本语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#比较"><span class="nav-number">2.</span> <span class="nav-text">比较</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#没有this"><span class="nav-number">2.1.</span> <span class="nav-text">没有this</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#没有-arguments"><span class="nav-number">2.2.</span> <span class="nav-text">没有 arguments</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不能通过-new-关键字调用"><span class="nav-number">2.3.</span> <span class="nav-text">不能通过 new 关键字调用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#没有-new-target"><span class="nav-number">2.4.</span> <span class="nav-text">没有 new.target</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#没有原型"><span class="nav-number">2.5.</span> <span class="nav-text">没有原型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#没有-super"><span class="nav-number">2.6.</span> <span class="nav-text">没有 super</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">2.7.</span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自执行函数"><span class="nav-number">3.</span> <span class="nav-text">自执行函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ES6系列"><span class="nav-number">4.</span> <span class="nav-text">ES6系列</span></a></li></ol></div>
             
 
           </div>
