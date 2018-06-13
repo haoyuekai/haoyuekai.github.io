@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-center-atom.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Css," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="竹林居士" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="写在前面随着Css高速发展，很多精致的效果已经可以不用依赖js、图片就可以实现。比如，接下来要绘制的QQ企鹅。  效果见：   http://www.haoyuekai.com/others/CSS/QQ.html  开始绘制小企鹅分析小企鹅结构分析小企鹅身体结构。大致把企鹅分为头、身体、手、脚。 123456&amp;lt;div id=&quot;qq&quot;&amp;gt;	&amp;lt;div id=&quot;head&quot; class=">
+<meta name="keywords" content="Css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Css画QQ企鹅">
+<meta property="og:url" content="http://yoursite.com/2018/06/12/Css-QQ/index.html">
+<meta property="og:site_name" content="竹林居士">
+<meta property="og:description" content="写在前面随着Css高速发展，很多精致的效果已经可以不用依赖js、图片就可以实现。比如，接下来要绘制的QQ企鹅。  效果见：   http://www.haoyuekai.com/others/CSS/QQ.html  开始绘制小企鹅分析小企鹅结构分析小企鹅身体结构。大致把企鹅分为头、身体、手、脚。 123456&amp;lt;div id=&quot;qq&quot;&amp;gt;	&amp;lt;div id=&quot;head&quot; class=">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/images/qie.png">
+<meta property="og:image" content="http://yoursite.com/images/head.png">
+<meta property="og:image" content="http://yoursite.com/images/body.png">
+<meta property="og:image" content="http://yoursite.com/images/hand.png">
+<meta property="og:image" content="http://yoursite.com/images/footer.png">
+<meta property="og:updated_time" content="2018-06-13T04:17:10.646Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Css画QQ企鹅">
+<meta name="twitter:description" content="写在前面随着Css高速发展，很多精致的效果已经可以不用依赖js、图片就可以实现。比如，接下来要绘制的QQ企鹅。  效果见：   http://www.haoyuekai.com/others/CSS/QQ.html  开始绘制小企鹅分析小企鹅结构分析小企鹅身体结构。大致把企鹅分为头、身体、手、脚。 123456&amp;lt;div id=&quot;qq&quot;&amp;gt;	&amp;lt;div id=&quot;head&quot; class=">
+<meta name="twitter:image" content="http://yoursite.com/images/qie.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/06/12/Css-QQ/"/>
+
+
+
+
+
+  <title>Css画QQ企鹅 | 竹林居士</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">竹林居士</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">我自信，我成功，我快乐</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/12/Css-QQ/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="郝月凯">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="竹林居士">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Css画QQ企鹅</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-12T15:08:07+08:00">
+                2018-06-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Css/" itemprop="url" rel="index">
+                    <span itemprop="name">Css</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>随着Css高速发展，很多精致的效果已经可以不用依赖js、图片就可以实现。比如，接下来要绘制的QQ企鹅。</p>
+<p><img src="/images/qie.png" width="200" align="center" title=""></p>
+<p>效果见：   <a href="http://www.haoyuekai.com/others/CSS/QQ.html" target="_blank" rel="noopener">http://www.haoyuekai.com/others/CSS/QQ.html</a></p>
+<hr>
+<h2 id="开始绘制小企鹅"><a href="#开始绘制小企鹅" class="headerlink" title="开始绘制小企鹅"></a>开始绘制小企鹅</h2><h3 id="分析小企鹅结构"><a href="#分析小企鹅结构" class="headerlink" title="分析小企鹅结构"></a>分析小企鹅结构</h3><p>分析小企鹅身体结构。大致把企鹅分为头、身体、手、脚。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"qq"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"head"</span> <span class="attr">class</span>=<span class="string">'head'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"body"</span> <span class="attr">class</span>=<span class="string">"body"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"hand"</span> <span class="attr">class</span>=<span class="string">"handWrapper"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"foot"</span> <span class="attr">class</span>=<span class="string">'footWrapper'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>绘制整体样式</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*qq*/</span></span><br><span class="line"><span class="selector-id">#qq</span> &#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">420px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">400px</span>;</span><br><span class="line">	<span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">	<span class="attribute">margin-top</span>: <span class="number">100px</span>;</span><br><span class="line">	<span class="attribute">position</span>: relative;</span><br><span class="line">	<span class="attribute">display</span>:block;</span><br><span class="line">	<span class="attribute">-webkit-animation-name</span>: startAni;</span><br><span class="line">	<span class="attribute">-webkit-animation-duration</span>: <span class="number">1s</span>;</span><br><span class="line">	<span class="attribute">-moz-animation-name</span>: startAni;</span><br><span class="line">	<span class="attribute">-moz-animation-duration</span>: <span class="number">1s</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="绘制小企鹅"><a href="#绘制小企鹅" class="headerlink" title="绘制小企鹅"></a>绘制小企鹅</h3><p>接下来，按照划分的结构，分别绘制</p>
+<h4 id="头部"><a href="#头部" class="headerlink" title="头部"></a>头部</h4><p>首先，绘制小企鹅的头部，还是先分析头部结构，划分为：眼睛（左右眼、眼球）、嘴巴（上下嘴唇、嘴角）。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"head"</span> <span class="attr">class</span>=<span class="string">"head"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'left eye'</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"eyelipLeftTop blink"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"eyelipLeftBottom blink"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"innerLeftEye blink"</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'right eye'</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"eyelipRightTop blink"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"eyelipRightBottom blink"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"innerRightEye blink"</span>&gt;</span></span><br><span class="line">    		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"fix"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'mouthTopContainer'</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'mouthTop'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span>	</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"mouthBottomContainer"</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"mouthBottom"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"lipsContainer"</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"lips"</span>&gt;</span></span><br><span class="line">    		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"lipShadow left"</span> <span class="attr">id</span>=<span class="string">"lsl"</span>&gt;</span> </span><br><span class="line">    		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"lipShadow right"</span> <span class="attr">id</span>=<span class="string">"lsr"</span>&gt;</span> </span><br><span class="line">    		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>开始绘制小企鹅头部</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.head</span>&#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">top</span>:<span class="number">18px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">96px</span>;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">234px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">185px</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#000</span>;</span><br><span class="line">	<span class="attribute">border-top-left-radius</span>: <span class="number">117px</span> <span class="number">117px</span>;</span><br><span class="line">	<span class="attribute">border-top-right-radius</span>: <span class="number">117px</span> <span class="number">117px</span>;</span><br><span class="line">	<span class="attribute">border-bottom-left-radius</span>: <span class="number">117px</span> <span class="number">68px</span>;</span><br><span class="line">	<span class="attribute">border-bottom-right-radius</span>: <span class="number">117px</span> <span class="number">68px</span>;</span><br><span class="line">	<span class="attribute">z-index</span>:<span class="number">10</span>;</span><br><span class="line">	<span class="attribute">background-color</span>: <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>*眼睛<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.eye</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">44px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">66px</span>;</span><br><span class="line">	<span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#000</span>;</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">50%</span> <span class="number">50%</span>;</span><br><span class="line">	<span class="attribute">position</span>: absolute;	</span><br><span class="line">	<span class="attribute">background</span>: <span class="number">#fff</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.left</span><span class="selector-class">.eye</span>&#123;</span><br><span class="line">	<span class="attribute">left</span>:<span class="number">62px</span>;</span><br><span class="line">	<span class="attribute">top</span>:<span class="number">50px</span>;	</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.right</span><span class="selector-class">.eye</span>&#123;</span><br><span class="line">	<span class="attribute">left</span>:<span class="number">123px</span>;</span><br><span class="line">	<span class="attribute">top</span>:<span class="number">50px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.innerLeftEye</span>&#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">20px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">20px</span>;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">18px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">24px</span>;</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#000</span>;</span><br><span class="line">	<span class="attribute">background</span>: <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.innerLeftEye</span><span class="selector-pseudo">:after</span>&#123;</span><br><span class="line">	<span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">6px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">8px</span>;</span><br><span class="line">	<span class="attribute">background</span>: white;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">11</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">6px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">9px</span>;</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.innerLeftEye</span><span class="selector-pseudo">:before</span>&#123;</span><br><span class="line">	<span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">3px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">4px</span>;</span><br><span class="line">	<span class="attribute">background</span>: white;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">11</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">14px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">4px</span>;</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.innerLeftEye</span><span class="selector-class">.blink</span>&#123;</span><br><span class="line">	<span class="attribute">-webkit-animation-name</span>: innerEyeBlink;</span><br><span class="line">	<span class="attribute">-webkit-animation-duration</span>: .<span class="number">2s</span>;</span><br><span class="line">	<span class="attribute">-webkit-animation-iteration-count</span>: infinite;</span><br><span class="line">	<span class="attribute">-webkit-transform-origin</span>: <span class="number">9px</span> <span class="number">12px</span>;</span><br><span class="line"></span><br><span class="line">	<span class="attribute">-moz-animation-name</span>: innerEyeBlink;</span><br><span class="line">	<span class="attribute">-moz-animation-duration</span>: .<span class="number">2s</span>;</span><br><span class="line">	<span class="attribute">-moz-animation-iteration-count</span>: infinite;</span><br><span class="line">	<span class="attribute">-moz-transform-origin</span>: <span class="number">9px</span> <span class="number">12px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*右眼同左眼*/</span></span><br><span class="line"><span class="selector-class">.innerRightEye</span>&#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">20px</span>;</span><br><span class="line">	<span class="attribute">right</span>: <span class="number">20px</span>;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">18px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">24px</span>;</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#000</span>;</span><br><span class="line">	<span class="attribute">background</span>: <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.innerRightEye</span><span class="selector-pseudo">:after</span>&#123;</span><br><span class="line">	<span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">6px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">8px</span>;</span><br><span class="line">	<span class="attribute">background</span>: white;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">11</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">6px</span>;</span><br><span class="line">	<span class="attribute">right</span>: <span class="number">9px</span>;</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.innerRightEye</span><span class="selector-pseudo">:before</span>&#123;</span><br><span class="line">	<span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">3px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">4px</span>;</span><br><span class="line">	<span class="attribute">background</span>: white;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">11</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">14px</span>;</span><br><span class="line">	<span class="attribute">right</span>: <span class="number">4px</span>;</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.innerRightEye</span><span class="selector-class">.blink</span>&#123;</span><br><span class="line">	<span class="attribute">-webkit-animation-name</span>: innerEyeBlink;</span><br><span class="line">	<span class="attribute">-webkit-animation-duration</span>: .<span class="number">2s</span>;</span><br><span class="line">	<span class="attribute">-webkit-animation-iteration-count</span>: infinite;</span><br><span class="line">	<span class="attribute">-webkit-transform-origin</span>: <span class="number">9px</span> <span class="number">12px</span>;</span><br><span class="line"></span><br><span class="line">	<span class="attribute">-moz-animation-name</span>: innerEyeBlink;</span><br><span class="line">	<span class="attribute">-moz-animation-duration</span>: .<span class="number">2s</span>;</span><br><span class="line">	<span class="attribute">-moz-animation-iteration-count</span>: infinite;</span><br><span class="line">	<span class="attribute">-moz-transform-origin</span>: <span class="number">9px</span> <span class="number">12px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.eyelipLeftTop</span><span class="selector-class">.blink</span>, <span class="selector-class">.eyelipRightTop</span><span class="selector-class">.blink</span>,</span><br><span class="line"><span class="selector-class">.eyelipLeftBottom</span><span class="selector-class">.blink</span>, <span class="selector-class">.eyelipRightBottom</span><span class="selector-class">.blink</span>&#123;</span><br><span class="line">	<span class="attribute">display</span>: block;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">0px</span>;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">46px</span>;</span><br><span class="line">	<span class="attribute">background</span>: black;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">1px</span> black solid;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">100</span>;</span><br><span class="line">	<span class="attribute">-webkit-animation-name</span>: eyelipAni1;</span><br><span class="line">	<span class="attribute">-webkit-animation-duration</span>: <span class="number">4s</span>;</span><br><span class="line">	<span class="attribute">-webkit-animation-iteration-count</span>: infinite;</span><br><span class="line"></span><br><span class="line">	<span class="attribute">-moz-animation-name</span>: eyelipAni1;</span><br><span class="line">	<span class="attribute">-moz-animation-duration</span>: <span class="number">4s</span>;</span><br><span class="line">	<span class="attribute">-moz-animation-iteration-count</span>: infinite;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.eyelipLeftTop</span>, <span class="selector-class">.eyelipRightTop</span>&#123;</span><br><span class="line">	<span class="attribute">top</span>: -<span class="number">2px</span>;</span><br><span class="line">	<span class="attribute">left</span>: -<span class="number">2px</span>;</span><br><span class="line">	<span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.eyelipLeftBottom</span>, <span class="selector-class">.eyelipRightBottom</span>&#123;</span><br><span class="line">	<span class="attribute">bottom</span>:-<span class="number">2px</span>;</span><br><span class="line">	<span class="attribute">left</span>:-<span class="number">2px</span>;</span><br><span class="line">	<span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>*嘴巴<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.mouthTopContainer</span> &#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">158px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">29px</span>;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">1</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">120px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">39px</span>;</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.mouthTop</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">158px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">34px</span>;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">1</span>;</span><br><span class="line">	<span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#FFA600</span>;</span><br><span class="line">	<span class="attribute">background</span>: <span class="number">#FFA600</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">border-top-left-radius</span>: <span class="number">45%</span> <span class="number">34px</span>;</span><br><span class="line">	<span class="attribute">border-top-right-radius</span>: <span class="number">45%</span> <span class="number">34px</span>;</span><br><span class="line">	<span class="comment">/*background-color: #FFA600; */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.mouthBottomContainer</span> &#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">158px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">15px</span>;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">1</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">146px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">39px</span>;</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.mouthBottom</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">158px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">24px</span>;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">1</span>;</span><br><span class="line">	<span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#FFA600</span>;</span><br><span class="line">	<span class="attribute">background</span>: <span class="number">#FFA600</span>;</span><br><span class="line">	<span class="attribute">border-top</span>:none;</span><br><span class="line">	<span class="attribute">top</span>: -<span class="number">4px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">border-bottom-left-radius</span>: <span class="number">45%</span> <span class="number">24px</span>;</span><br><span class="line">	<span class="attribute">border-bottom-right-radius</span>: <span class="number">45%</span> <span class="number">24px</span>;</span><br><span class="line">	<span class="attribute">background-color</span>: <span class="number">#FFA600</span>; </span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.lips</span>&#123;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#FFA600</span>;</span><br><span class="line">	<span class="attribute">background</span>: <span class="number">#FFA600</span>;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">116px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">24px</span>;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">146px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">60px</span>;</span><br><span class="line">	<span class="attribute">border-top</span>: none;</span><br><span class="line">	<span class="attribute">border-bottom-left-radius</span>: <span class="number">50%</span> <span class="number">100%</span>;</span><br><span class="line">	<span class="attribute">border-bottom-right-radius</span>: <span class="number">50%</span> <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.lipShadow</span> &#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">0px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">0px</span>;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">2</span>;</span><br><span class="line">	<span class="attribute">border-top</span>: <span class="number">20px</span> solid transparent;</span><br><span class="line">	<span class="attribute">border-bottom</span>: <span class="number">20px</span> solid transparent;</span><br><span class="line">	<span class="attribute">border-right</span>: <span class="number">8px</span> solid black;</span><br><span class="line">	<span class="attribute">-webkit-transform-origin</span>: top right;</span><br><span class="line">	<span class="attribute">-webkit-transform</span>: <span class="built_in">rotate</span>(-60deg);</span><br><span class="line">	<span class="attribute">-moz-transform-origin</span>: top right;</span><br><span class="line">	<span class="attribute">-moz-transform</span>: <span class="built_in">rotate</span>(-60deg);</span><br><span class="line">	<span class="attribute">-o-transform-origin</span>: top right;</span><br><span class="line">	<span class="attribute">-o-transform</span>: <span class="built_in">rotate</span>(-60deg);</span><br><span class="line">	<span class="attribute">transform-origin</span>: top right;</span><br><span class="line">	<span class="attribute">transform</span>: <span class="built_in">rotate</span>(-60deg);</span><br><span class="line">	<span class="attribute">left</span>: -<span class="number">12px</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">4px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.lipShadow</span><span class="selector-class">.right</span>&#123;</span><br><span class="line">	<span class="attribute">left</span>:<span class="number">114px</span>;</span><br><span class="line">	<span class="attribute">-webkit-transform</span>: <span class="built_in">rotate</span>(60deg) <span class="built_in">rotateY</span>(180deg);</span><br><span class="line">	<span class="attribute">-moz-transform</span>: <span class="built_in">rotate</span>(60deg) <span class="built_in">rotateY</span>(180deg);</span><br><span class="line">	<span class="attribute">-o-transform</span>: <span class="built_in">rotate</span>(60deg) <span class="built_in">rotateY</span>(180deg);</span><br><span class="line">	<span class="attribute">transform</span>: <span class="built_in">rotate</span>(60deg) <span class="built_in">rotateY</span>(180deg);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><img src="/images/head.png" width="200" align="center" title="head"></p>
+<h4 id="身体"><a href="#身体" class="headerlink" title="身体"></a>身体</h4><p>分析小企鹅身体结构，划分为：围巾、肚子</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"body"</span> <span class="attr">class</span>=<span class="string">"body"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"innerWrapper"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"inner"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"outterWrapper"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span> = <span class="string">'outter'</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span>				</span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"scarf"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"scarfShadow"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"scarfShadowRight"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"scarfEnd"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"scarfEndShadow"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>开始绘制小企鹅身体</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.body</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">326px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">300px</span>;</span><br><span class="line">	<span class="comment">/*border: 1px solid black;*/</span></span><br><span class="line">	<span class="attribute">top</span>: <span class="number">135px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">48px</span>;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>*围巾</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.scarf</span> &#123;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">4px</span> solid <span class="number">#000</span>;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">background</span>: <span class="number">#FB0009</span>;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">5</span>;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">258px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">110px</span>;</span><br><span class="line">	<span class="attribute">top</span>: -<span class="number">2px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">34px</span>;</span><br><span class="line">	<span class="attribute">border-top-left-radius</span>: <span class="number">30px</span> <span class="number">34px</span>;</span><br><span class="line">	<span class="attribute">border-top-right-radius</span>: <span class="number">38px</span> <span class="number">34px</span>;</span><br><span class="line">	<span class="attribute">border-bottom-left-radius</span>: <span class="number">50%</span> <span class="number">76px</span>;</span><br><span class="line">	<span class="attribute">border-bottom-right-radius</span>: <span class="number">50%</span> <span class="number">76px</span>;</span><br><span class="line">	<span class="attribute">border-top</span>: none;	</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.scarfShadow</span> &#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">border-top</span>: <span class="number">6px</span> solid <span class="number">#000</span>;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">60px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">70px</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">0px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">6px</span>;</span><br><span class="line">	<span class="attribute">border-top-left-radius</span>: <span class="number">90px</span> <span class="number">120px</span>;</span><br><span class="line">	<span class="attribute">border-top-right-radius</span>: <span class="number">30px</span> <span class="number">30px</span>;</span><br><span class="line">	<span class="attribute">-webkit-transform</span>: <span class="built_in">rotate</span>(-79deg);</span><br><span class="line">	<span class="attribute">-moz-transform</span>: <span class="built_in">rotate</span>(-79deg);</span><br><span class="line">	<span class="attribute">-o-transform</span>: <span class="built_in">rotate</span>(-79deg);</span><br><span class="line">	<span class="attribute">transform</span>: <span class="built_in">rotate</span>(-79deg);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.scarfShadowRight</span> &#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">border-right</span>: <span class="number">6px</span> solid black;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">70px</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">8px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">143px</span>;</span><br><span class="line">	<span class="attribute">border-bottom-right-radius</span>: <span class="number">70px</span> <span class="number">70px</span>;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">6</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.scarfEnd</span>&#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">52px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">64px</span>;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">4</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">90px</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">3px</span> solid black;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">74px</span>;</span><br><span class="line">	<span class="attribute">border-bottom-left-radius</span>: <span class="number">50%</span> <span class="number">43%</span>;</span><br><span class="line">	<span class="attribute">border-bottom-right-radius</span>: <span class="number">15px</span>;</span><br><span class="line">	<span class="attribute">border-top-left-radius</span>: <span class="number">20%</span> <span class="number">57%</span>;</span><br><span class="line">	<span class="attribute">background</span>: <span class="number">#FB0009</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.scarfEndShadow</span>&#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">border-top</span>: <span class="number">6px</span> solid black;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">20px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">20px</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">6px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">12px</span>;</span><br><span class="line">	<span class="attribute">border-top-left-radius</span>: <span class="number">30px</span> <span class="number">30px</span>;</span><br><span class="line">	<span class="attribute">-webkit-transform-origin</span>: top right;</span><br><span class="line">	<span class="attribute">-moz-transform-origin</span>: top right;</span><br><span class="line">	<span class="attribute">-o-transform-origin</span>: top right;</span><br><span class="line">	<span class="attribute">transform-origin</span>: top right;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">10</span>;</span><br><span class="line">	<span class="attribute">-webkit-transform</span>: <span class="built_in">skewX</span>(4deg) <span class="built_in">scaleY</span>(1.5) <span class="built_in">rotate</span>(-60deg);</span><br><span class="line">	<span class="attribute">-moz-transform</span>: <span class="built_in">skewX</span>(4deg) <span class="built_in">scaleY</span>(1.5) <span class="built_in">rotate</span>(-60deg);</span><br><span class="line">	<span class="attribute">-o-transform</span>: <span class="built_in">skewX</span>(4deg) <span class="built_in">scaleY</span>(1.5) <span class="built_in">rotate</span>(-60deg);</span><br><span class="line">	<span class="attribute">transform</span>: <span class="built_in">skewX</span>(4deg) <span class="built_in">scaleY</span>(1.5) <span class="built_in">rotate</span>(-60deg);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>*肚子</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.innerWrapper</span>&#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">280px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">30px</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">76px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.inner</span> &#123;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#000</span>;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">218px</span>;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">210px</span>;</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">25px</span>;</span><br><span class="line">	<span class="attribute">top</span>: -<span class="number">71px</span>;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">4</span>;</span><br><span class="line">	<span class="attribute">background</span>: <span class="number">#fff</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.outterWrapper</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">262px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">32px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">250px</span>;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">54px</span>;</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.outter</span>&#123;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#000</span>;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">260px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">250px</span>;</span><br><span class="line">	<span class="attribute">border-radius</span>: <span class="number">125px</span>;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">top</span>: -<span class="number">84px</span>;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">3</span>;</span><br><span class="line">	<span class="attribute">background</span>: <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/images/body.png" width="200" align="center" title="body"></p>
+<h4 id="小手"><a href="#小手" class="headerlink" title="小手"></a>小手</h4><p>小企鹅手的结构比较简单</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"hand"</span> <span class="attr">class</span>=<span class="string">"handWrapper"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"leftHandTopContainer"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"leftHandTop"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"leftHandBottomContainer"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"leftHandBottom"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"rightHandTopContainer"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"rightHandTop"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"rightHandBottomContainer"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"rightHandBottom"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>开始绘制</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.handWrapper</span>&#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">219px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">7px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.leftHandTopContainer</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">118px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">26px</span>;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">1</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">55px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">50px</span>;</span><br><span class="line">	<span class="attribute">-webkit-transform-origin</span>: bottom left;</span><br><span class="line">	<span class="attribute">-webkit-transform</span>: <span class="built_in">rotate</span>(-70deg);</span><br><span class="line">	<span class="attribute">-moz-transform-origin</span>: bottom left;</span><br><span class="line">	<span class="attribute">-moz-transform</span>: <span class="built_in">rotate</span>(-70deg);</span><br><span class="line">	<span class="attribute">-o-transform-origin</span>: bottom left;</span><br><span class="line">	<span class="attribute">-o-transform</span>: <span class="built_in">rotate</span>(-70deg);</span><br><span class="line">	<span class="attribute">transform-origin</span>: bottom left;</span><br><span class="line">	<span class="attribute">transform</span>: <span class="built_in">rotate</span>(-70deg);</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.leftHandTop</span>&#123;	</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">128px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">54px</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#050346</span>;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">border-top-left-radius</span>: <span class="number">44%</span> <span class="number">38px</span>;</span><br><span class="line">	<span class="attribute">border-top-right-radius</span>: <span class="number">56%</span> <span class="number">33px</span>;</span><br><span class="line">	<span class="attribute">background</span>: <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.leftHandBottomContainer</span> &#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">115px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">30px</span>;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">1</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">78px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">50px</span>;</span><br><span class="line">	<span class="attribute">-webkit-transform-origin</span>: top left;</span><br><span class="line">	<span class="attribute">-webkit-transform</span>: <span class="built_in">rotate</span>(-70deg);</span><br><span class="line">	<span class="attribute">-moz-transform-origin</span>: top left;</span><br><span class="line">	<span class="attribute">-moz-transform</span>: <span class="built_in">rotate</span>(-70deg);</span><br><span class="line">	<span class="attribute">-o-transform-origin</span>: top left;</span><br><span class="line">	<span class="attribute">-o-transform</span>: <span class="built_in">rotate</span>(-70deg);</span><br><span class="line">	<span class="attribute">transform-origin</span>: top left;</span><br><span class="line">	<span class="attribute">transform</span>: <span class="built_in">rotate</span>(-70deg);</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.leftHandBottom</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">128px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">44px</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#050346</span>;</span><br><span class="line">	<span class="attribute">background</span>: <span class="number">#000</span>;</span><br><span class="line">	<span class="attribute">border-top</span>: none;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">border-bottom-left-radius</span>: <span class="number">48%</span> <span class="number">20px</span>;</span><br><span class="line">	<span class="attribute">border-bottom-right-radius</span>: <span class="number">52%</span> <span class="number">23px</span>;</span><br><span class="line">	<span class="attribute">top</span>: -<span class="number">26px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.rightHandTopContainer</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">118px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">34px</span>;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">3</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">47px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">240px</span>;</span><br><span class="line">	<span class="attribute">-webkit-transform-origin</span>: bottom right;</span><br><span class="line">	<span class="attribute">-webkit-transform</span>: <span class="built_in">rotate</span>(65deg);</span><br><span class="line">	<span class="attribute">-moz-transform-origin</span>: bottom right;</span><br><span class="line">	<span class="attribute">-moz-transform</span>: <span class="built_in">rotate</span>(65deg);</span><br><span class="line">	<span class="attribute">-o-transform-origin</span>: bottom right;</span><br><span class="line">	<span class="attribute">-o-transform</span>: <span class="built_in">rotate</span>(65deg);</span><br><span class="line">	<span class="attribute">transform-origin</span>: bottom right;</span><br><span class="line">	<span class="attribute">transform</span>: <span class="built_in">rotate</span>(65deg);</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.rightHandTop</span>&#123;	</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">148px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">54px</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#050346</span>;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">border-top-right-radius</span>: <span class="number">41%</span> <span class="number">54px</span>;</span><br><span class="line">	<span class="attribute">border-top-left-radius</span>: <span class="number">59%</span> <span class="number">48px</span>;</span><br><span class="line">	<span class="attribute">background</span>: black;</span><br><span class="line">	<span class="attribute">left</span>: -<span class="number">30px</span>;</span><br><span class="line">	<span class="attribute">-webkit-transform</span>: <span class="built_in">rotateY</span>(-180deg);</span><br><span class="line">	<span class="attribute">-moz-transform</span>: <span class="built_in">rotateY</span>(-180deg);</span><br><span class="line">	<span class="attribute">-o-transform</span>: <span class="built_in">rotateY</span>(-180deg);</span><br><span class="line">	<span class="attribute">transform</span>: <span class="built_in">rotateY</span>(-180deg);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.rightHandBottomContainer</span>&#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">110px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">58px</span>;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">1</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">81px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">248px</span>;</span><br><span class="line">	<span class="attribute">-webkit-transform-origin</span>: top right;</span><br><span class="line">	<span class="attribute">-webkit-transform</span>: <span class="built_in">rotate</span>(90deg);</span><br><span class="line">	<span class="attribute">-moz-transform-origin</span>: top right;</span><br><span class="line">	<span class="attribute">-moz-transform</span>: <span class="built_in">rotate</span>(90deg);</span><br><span class="line">	<span class="attribute">-o-transform-origin</span>: top right;</span><br><span class="line">	<span class="attribute">-o-transform</span>: <span class="built_in">rotate</span>(90deg);</span><br><span class="line">	<span class="attribute">transform-origin</span>: top right;</span><br><span class="line">	<span class="attribute">transform</span>: <span class="built_in">rotate</span>(90deg);</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.rightHandBottom</span>&#123;	</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">68px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">28px</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#000</span>;</span><br><span class="line">	<span class="attribute">background</span>: black;</span><br><span class="line">	<span class="attribute">border-top</span>: none;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">1px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">38px</span>;</span><br><span class="line">	<span class="attribute">border-bottom-right-radius</span>: <span class="number">100%</span> <span class="number">40px</span>;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">999</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/images/hand.png" width="200" align="center" title="hand"></p>
+<h4 id="脚丫"><a href="#脚丫" class="headerlink" title="脚丫"></a>脚丫</h4><p>小企鹅脚丫的结构分为： 脚掌、脚趾</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"foot"</span> <span class="attr">class</span>=<span class="string">'footWrapper'</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"leftFootTopWrapper"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"leftFootTop"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"leftFootBottomWrapper"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"leftFootBottom"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'toe left'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"rightFootTopWrapper"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"rightFootTop"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"rightFootBottomWrapper"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"rightFootBottom"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'toe right'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>开始绘制小脚丫</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.footWrapper</span>&#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">292px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">80px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.leftFootTopWrapper</span> &#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">130px</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">16px</span>;</span><br><span class="line">	<span class="attribute">left</span>: -<span class="number">1px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">37px</span>;</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.leftFootTop</span>&#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">120px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">60px</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">4px</span> solid black;</span><br><span class="line">	<span class="attribute">background</span>: <span class="number">#FF9C00</span>;</span><br><span class="line">	<span class="attribute">border-top-left-radius</span>: <span class="number">80%</span> <span class="number">70%</span>;</span><br><span class="line">	<span class="attribute">top</span>: -<span class="number">10px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">3px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.toe</span> &#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">border-top</span>: <span class="number">4px</span> solid black;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">25px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">20px</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">50px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">2px</span>;</span><br><span class="line">	<span class="attribute">border-top-right-radius</span>: <span class="number">30px</span> <span class="number">30px</span>;</span><br><span class="line">	<span class="attribute">border-top-left-radius</span>: <span class="number">10px</span> <span class="number">10px</span>;</span><br><span class="line">	<span class="attribute">-webkit-transform-origin</span>: top left;</span><br><span class="line">	<span class="attribute">-moz-transform-origin</span>: top left;</span><br><span class="line">	<span class="attribute">-o-transform-origin</span>: top left;</span><br><span class="line">	<span class="attribute">transform-origin</span>: top left;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">10</span>;</span><br><span class="line">	<span class="attribute">-webkit-transform</span>: <span class="built_in">rotate</span>(-45deg);</span><br><span class="line">	<span class="attribute">-moz-transform</span>: <span class="built_in">rotate</span>(-45deg);</span><br><span class="line">	<span class="attribute">-o-transform</span>: <span class="built_in">rotate</span>(-45deg);</span><br><span class="line">	<span class="attribute">transform</span>: <span class="built_in">rotate</span>(-45deg);</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.toe</span><span class="selector-class">.right</span>&#123;</span><br><span class="line">	<span class="attribute">-webkit-transform</span>: <span class="built_in">rotate</span>(45deg) <span class="built_in">rotateY</span>(180deg);</span><br><span class="line">	<span class="attribute">-moz-transform</span>: <span class="built_in">rotate</span>(45deg) <span class="built_in">rotateY</span>(180deg);</span><br><span class="line">	<span class="attribute">-o-transform</span>: <span class="built_in">rotate</span>(45deg) <span class="built_in">rotateY</span>(180deg);</span><br><span class="line">	<span class="attribute">transform</span>: <span class="built_in">rotate</span>(45deg) <span class="built_in">rotateY</span>(180deg);</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">264px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.leftFootBottomWrapper</span> &#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">130px</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">52px</span>;</span><br><span class="line">	<span class="attribute">left</span>: -<span class="number">1px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">38px</span>;</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.leftFootBottom</span>&#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">120px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">60px</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">4px</span> solid <span class="number">#000</span>;</span><br><span class="line">	<span class="attribute">background</span>: <span class="number">#FF9C00</span>;</span><br><span class="line">	<span class="attribute">border-top-left-radius</span>: <span class="number">50%</span> <span class="number">44%</span>;</span><br><span class="line">	<span class="attribute">border-top-right-radius</span>: <span class="number">50%</span> <span class="number">44%</span>;</span><br><span class="line">	<span class="attribute">border-bottom-left-radius</span>: <span class="number">50%</span> <span class="number">56%</span>;</span><br><span class="line">	<span class="attribute">border-bottom-right-radius</span>: <span class="number">50%</span> <span class="number">56%</span>;</span><br><span class="line">	<span class="attribute">top</span>: -<span class="number">30px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">3px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.rightFootTopWrapper</span> &#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">134px</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">22px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">134px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">36px</span>;</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">	<span class="attribute">z-index</span>: <span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.rightFootTop</span>&#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">120px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">60px</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">4px</span> solid black;</span><br><span class="line">	<span class="attribute">background</span>: <span class="number">#FF9C00</span>;</span><br><span class="line">	<span class="attribute">border-top-right-radius</span>: <span class="number">32%</span> <span class="number">65%</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">0px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">4px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.rightFootBottomWrapper</span> &#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">134px</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">52px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">134px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">38px</span>;</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.rightFootBottom</span>&#123;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">120px</span>;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">60px</span>;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">4px</span> solid <span class="number">#000</span>;</span><br><span class="line">	<span class="attribute">background</span>: <span class="number">#FF9C00</span>;</span><br><span class="line">	<span class="attribute">border-top-left-radius</span>: <span class="number">50%</span> <span class="number">56%</span>;</span><br><span class="line">	<span class="attribute">border-top-right-radius</span>: <span class="number">50%</span> <span class="number">56%</span>;</span><br><span class="line">	<span class="attribute">border-bottom-left-radius</span>: <span class="number">50%</span> <span class="number">44%</span>;</span><br><span class="line">	<span class="attribute">border-bottom-right-radius</span>: <span class="number">50%</span> <span class="number">44%</span>;</span><br><span class="line">	<span class="attribute">top</span>: -<span class="number">30px</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">3px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/images/footer.png" width="200" align="center" title="footer"></p>
+<p>至此，小企鹅已经基本完成了</p>
+<h2 id="添加动画效果"><a href="#添加动画效果" class="headerlink" title="添加动画效果"></a>添加动画效果</h2><p>接下来，我们为小企鹅添加一些必要的动画，让小企鹅更加活灵活现</p>
+<h3 id="眼球"><a href="#眼球" class="headerlink" title="眼球"></a>眼球</h3><p>自定义动画<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*眼球动画*/</span></span><br><span class="line">@-<span class="keyword">webkit</span>-<span class="keyword">keyframes</span> innerEyeBlink&#123;</span><br><span class="line">	<span class="selector-tag">from</span>&#123;</span><br><span class="line">		<span class="attribute">-webkit-transform</span>: <span class="built_in">rotate</span>(0deg);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	50%&#123;</span><br><span class="line">		<span class="attribute">-webkit-transform</span>: <span class="built_in">rotate</span>(-5deg)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	100% &#123;</span><br><span class="line">		<span class="attribute">-webkit-transform</span>: <span class="built_in">rotate</span>(0deg)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">@-<span class="keyword">moz</span>-<span class="keyword">keyframes</span> innerEyeBlink&#123;</span><br><span class="line">	<span class="selector-tag">from</span>&#123;</span><br><span class="line">		<span class="attribute">-moz-transform</span>: <span class="built_in">rotate</span>(0deg);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	50%&#123;</span><br><span class="line">		<span class="attribute">-moz-transform</span>: <span class="built_in">rotate</span>(-5deg)</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	100% &#123;</span><br><span class="line">		<span class="attribute">-moz-transform</span>: <span class="built_in">rotate</span>(0deg)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="眨眼"><a href="#眨眼" class="headerlink" title="眨眼"></a>眨眼</h3><p>自定义动画</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*眨眼睛*/</span></span><br><span class="line">@-<span class="keyword">webkit</span>-<span class="keyword">keyframes</span> eyelipAni1&#123;</span><br><span class="line">	<span class="selector-tag">from</span> &#123;</span><br><span class="line">		<span class="attribute">height</span>: <span class="number">0px</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	4% &#123;</span><br><span class="line">		<span class="attribute">height</span>: <span class="number">34px</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	8%&#123;</span><br><span class="line">		<span class="attribute">height</span>: <span class="number">0px</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="selector-tag">to</span>&#123;</span><br><span class="line">		<span class="attribute">height</span>: <span class="number">0px</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@-<span class="keyword">moz</span>-<span class="keyword">keyframes</span> eyelipAni1&#123;</span><br><span class="line">	<span class="selector-tag">from</span> &#123;</span><br><span class="line">		<span class="attribute">height</span>: <span class="number">0px</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	4% &#123;</span><br><span class="line">		<span class="attribute">height</span>: <span class="number">34px</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	8%&#123;</span><br><span class="line">		<span class="attribute">height</span>: <span class="number">0px</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="selector-tag">to</span>&#123;</span><br><span class="line">		<span class="attribute">height</span>: <span class="number">0px</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="入场动画"><a href="#入场动画" class="headerlink" title="入场动画"></a>入场动画</h3><p>自定义动画</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">@-<span class="keyword">webkit</span>-<span class="keyword">keyframes</span> startAni&#123;</span><br><span class="line">	<span class="selector-tag">from</span>&#123;</span><br><span class="line">		<span class="attribute">left</span>: <span class="number">210px</span>;</span><br><span class="line">		<span class="attribute">-webkit-transform</span>: <span class="built_in">rotate</span>(360deg) <span class="built_in">scale</span>(.0001);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	70%&#123;</span><br><span class="line">		<span class="attribute">-webkit-transform</span>: <span class="built_in">rotate</span>(0deg) <span class="built_in">scale</span>(1.5);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="selector-tag">to</span>&#123;</span><br><span class="line">		<span class="attribute">-webkit-transform</span>: <span class="built_in">rotate</span>(0deg) <span class="built_in">scale</span>(1);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@-<span class="keyword">moz</span>-<span class="keyword">keyframes</span> startAni&#123;</span><br><span class="line">	<span class="selector-tag">from</span>&#123;</span><br><span class="line">		<span class="attribute">left</span>: <span class="number">210px</span>;</span><br><span class="line">		<span class="attribute">-moz-transform</span>: <span class="built_in">rotate</span>(360deg) <span class="built_in">scale</span>(.0001);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	70%&#123;</span><br><span class="line">		<span class="attribute">-moz-transform</span>: <span class="built_in">rotate</span>(0deg) <span class="built_in">scale</span>(1.5);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="selector-tag">to</span>&#123;</span><br><span class="line">		<span class="attribute">-moz-transform</span>: <span class="built_in">rotate</span>(0deg) <span class="built_in">scale</span>(1);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>动画效果添加完毕，当然，如果读者朋友有兴趣，还可以拓展一些其他的有趣的动作给我们可爱的小企鹅。</p>
+<h2 id="添加Css背景"><a href="#添加Css背景" class="headerlink" title="添加Css背景"></a>添加Css背景</h2><p>接下来，为我们的小企鹅添加一个好看的背景，因为是纯Css实现，这里不用背景图片，我们使用Css渐变，来绘制一个网格背景</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">html</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">-webkit-radial-gradient</span>(50vmin 50vmin, #feb4ff, #a3a3ec);</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">radial-gradient</span>(50vmin 50vmin, #feb4ff, #a3a3ec);</span><br><span class="line">    <span class="attribute">background-position</span>: -<span class="number">20vw</span> center;</span><br><span class="line">    <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#a3a3ec</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">html</span> <span class="selector-tag">body</span> &#123;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">padding-top</span>: <span class="number">100px</span>;</span><br><span class="line">	<span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">	<span class="attribute">background-image</span>: <span class="built_in">-webkit-repeating-linear-gradient</span>(330deg, rgba(255, 255, 255, 0.6), <span class="built_in">rgba</span>(255, 255, 255, 0.6) <span class="number">1px</span>, transparent <span class="number">1px</span>, transparent <span class="number">30px</span>, <span class="built_in">rgba</span>(255, 255, 255, 0.3) <span class="number">30px</span>, <span class="built_in">rgba</span>(255, 255, 255, 0.3) <span class="number">31px</span>, transparent <span class="number">31px</span>, transparent <span class="number">60px</span>), <span class="built_in">-webkit-repeating-linear-gradient</span>(30deg, rgba(255, 255, 255, 0.6), <span class="built_in">rgba</span>(255, 255, 255, 0.6) <span class="number">1px</span>, transparent <span class="number">1px</span>, transparent <span class="number">30px</span>, <span class="built_in">rgba</span>(255, 255, 255, 0.3) <span class="number">30px</span>, <span class="built_in">rgba</span>(255, 255, 255, 0.3) <span class="number">31px</span>, transparent <span class="number">31px</span>, transparent <span class="number">60px</span>), <span class="built_in">-webkit-repeating-linear-gradient</span>(top, rgba(255, 255, 255, 0.3), <span class="built_in">rgba</span>(255, 255, 255, 0.3) <span class="number">1px</span>, transparent <span class="number">1px</span>, transparent <span class="number">30px</span>);</span><br><span class="line">	<span class="attribute">background-image</span>: <span class="built_in">repeating-linear-gradient</span>(120deg, rgba(255, 255, 255, 0.6), <span class="built_in">rgba</span>(255, 255, 255, 0.6) <span class="number">1px</span>, transparent <span class="number">1px</span>, transparent <span class="number">30px</span>, <span class="built_in">rgba</span>(255, 255, 255, 0.3) <span class="number">30px</span>, <span class="built_in">rgba</span>(255, 255, 255, 0.3) <span class="number">31px</span>, transparent <span class="number">31px</span>, transparent <span class="number">60px</span>), <span class="built_in">repeating-linear-gradient</span>(60deg, rgba(255, 255, 255, 0.6), <span class="built_in">rgba</span>(255, 255, 255, 0.6) <span class="number">1px</span>, transparent <span class="number">1px</span>, transparent <span class="number">30px</span>, <span class="built_in">rgba</span>(255, 255, 255, 0.3) <span class="number">30px</span>, <span class="built_in">rgba</span>(255, 255, 255, 0.3) <span class="number">31px</span>, transparent <span class="number">31px</span>, transparent <span class="number">60px</span>), <span class="built_in">repeating-linear-gradient</span>(to bottom, rgba(255, 255, 255, 0.3), <span class="built_in">rgba</span>(255, 255, 255, 0.3) <span class="number">1px</span>, transparent <span class="number">1px</span>, transparent <span class="number">30px</span>);</span><br><span class="line">	<span class="attribute">background-size</span>: <span class="number">70px</span> <span class="number">120px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>到这里，一只卡哇伊的小企鹅，已经出现在我们的网页上了。Css来实现绘图，比较复杂，实际中不会用到，但是用来熟悉一下Css的一些属性，还是很不错的。最终的是可以培养一下自己的耐心。基于本人审美确实不怎么样，如果觉得有不满意的地方，可以自行修改，当然了，能分享给我之最好的。源码见<a href="https://github.com/haoyuekai/CSS-img/blob/master/QQ.html" target="_blank" rel="noopener">https://github.com/haoyuekai/CSS-img/blob/master/QQ.html</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+	
+	
+	
+	  <div>
+	    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+	  </div>
+	
+	
+	
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Css/" rel="tag"># Css</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/07/关于ES6箭头函数/" rel="next" title="关于ES6箭头函数">
+                <i class="fa fa-chevron-left"></i> 关于ES6箭头函数
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNzA4MS8xMzYxNw=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.png"
+                alt="郝月凯" />
+            
+              <p class="site-author-name" itemprop="name">郝月凯</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/haoyuekai" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:hao18233132132@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                关注的前辈
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.w3cplus.com/blog" title="大漠" target="_blank">大漠</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.ruanyifeng.com/blog/" title="阮一峰" target="_blank">阮一峰</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.zhangxinxu.com/" title="张鑫旭" target="_blank">张鑫旭</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.liaoxuefeng.com/" title="廖雪峰" target="_blank">廖雪峰</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开始绘制小企鹅"><span class="nav-number">2.</span> <span class="nav-text">开始绘制小企鹅</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#分析小企鹅结构"><span class="nav-number">2.1.</span> <span class="nav-text">分析小企鹅结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#绘制小企鹅"><span class="nav-number">2.2.</span> <span class="nav-text">绘制小企鹅</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#头部"><span class="nav-number">2.2.1.</span> <span class="nav-text">头部</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#身体"><span class="nav-number">2.2.2.</span> <span class="nav-text">身体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#小手"><span class="nav-number">2.2.3.</span> <span class="nav-text">小手</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#脚丫"><span class="nav-number">2.2.4.</span> <span class="nav-text">脚丫</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加动画效果"><span class="nav-number">3.</span> <span class="nav-text">添加动画效果</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#眼球"><span class="nav-number">3.1.</span> <span class="nav-text">眼球</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#眨眼"><span class="nav-number">3.2.</span> <span class="nav-text">眨眼</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#入场动画"><span class="nav-number">3.3.</span> <span class="nav-text">入场动画</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加Css背景"><span class="nav-number">4.</span> <span class="nav-text">添加Css背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018/6/1 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">郝月凯</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>
