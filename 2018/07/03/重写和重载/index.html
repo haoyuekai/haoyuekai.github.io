@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Java面向对象," />
 
 
 
@@ -88,19 +88,21 @@
 
 
 
-<meta name="description" content="职业： 前端工程师 我的主页： http://www.haoyuekai.com/ github: https://github.com/haoyuekai/ 联系方式：   邮箱: hao18233132132@163.com QQ: 1013947123 微信: 18811626300">
-<meta property="og:type" content="website">
-<meta property="og:title" content="竹林居士">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta name="description" content="重写(Override)重写是子类对父类的允许访问的方法的实现过程进行重新编写, 返回值和形参都不能改变。即外壳不变，核心重写！ 重写的好处在于子类可以根据需要，定义特定于自己的行为。 也就是说子类能够根据需要实现父类的方法。 12345678910111213141516171819202122class Animal&amp;#123;   public void move()&amp;#123;">
+<meta name="keywords" content="Java面向对象">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java面向对象-重写(Override)和重载(Overload)">
+<meta property="og:url" content="http://yoursite.com/2018/07/03/重写和重载/index.html">
 <meta property="og:site_name" content="竹林居士">
-<meta property="og:description" content="职业： 前端工程师 我的主页： http://www.haoyuekai.com/ github: https://github.com/haoyuekai/ 联系方式：   邮箱: hao18233132132@163.com QQ: 1013947123 微信: 18811626300">
+<meta property="og:description" content="重写(Override)重写是子类对父类的允许访问的方法的实现过程进行重新编写, 返回值和形参都不能改变。即外壳不变，核心重写！ 重写的好处在于子类可以根据需要，定义特定于自己的行为。 也就是说子类能够根据需要实现父类的方法。 12345678910111213141516171819202122class Animal&amp;#123;   public void move()&amp;#123;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/images/mine.jpg">
-<meta property="og:updated_time" content="2018-06-07T07:11:05.421Z">
+<meta property="og:image" content="http://yoursite.com/images/OverrideAndOverload1.jpg">
+<meta property="og:image" content="http://yoursite.com/images/OverrideAndOverload.png">
+<meta property="og:updated_time" content="2018-07-12T10:05:06.747Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="竹林居士">
-<meta name="twitter:description" content="职业： 前端工程师 我的主页： http://www.haoyuekai.com/ github: https://github.com/haoyuekai/ 联系方式：   邮箱: hao18233132132@163.com QQ: 1013947123 微信: 18811626300">
-<meta name="twitter:image" content="http://yoursite.com/images/mine.jpg">
+<meta name="twitter:title" content="Java面向对象-重写(Override)和重载(Overload)">
+<meta name="twitter:description" content="重写(Override)重写是子类对父类的允许访问的方法的实现过程进行重新编写, 返回值和形参都不能改变。即外壳不变，核心重写！ 重写的好处在于子类可以根据需要，定义特定于自己的行为。 也就是说子类能够根据需要实现父类的方法。 12345678910111213141516171819202122class Animal&amp;#123;   public void move()&amp;#123;">
+<meta name="twitter:image" content="http://yoursite.com/images/OverrideAndOverload1.jpg">
 
 
 
@@ -130,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/about/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/03/重写和重载/"/>
 
 
 
 
 
-  <title> | 竹林居士</title>
+  <title>Java面向对象-重写(Override)和重载(Overload) | 竹林居士</title>
   
 
 
@@ -306,46 +308,231 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/03/重写和重载/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="郝月凯">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="竹林居士">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline"></h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <p><img src="/images/mine.jpg" width="200" align="center" title=""></p>
-<hr>
+          <h1 class="post-title" itemprop="name headline">Java面向对象-重写(Override)和重载(Overload)</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-03T11:05:24+08:00">
+                2018-07-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="重写-Override"><a href="#重写-Override" class="headerlink" title="重写(Override)"></a>重写(Override)</h3><p>重写是子类对父类的允许访问的方法的实现过程进行重新编写, 返回值和形参都不能改变。即外壳不变，核心重写！</p>
+<p>重写的好处在于子类可以根据需要，定义特定于自己的行为。 也就是说子类能够根据需要实现父类的方法。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Animal</span></span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">move</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"动物可以移动"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Dog</span> <span class="keyword">extends</span> <span class="title">Animal</span></span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">move</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"狗可以跑和走"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestDog</span></span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span></span>&#123;</span><br><span class="line">      Animal a = <span class="keyword">new</span> Animal(); <span class="comment">// Animal 对象</span></span><br><span class="line">      Animal b = <span class="keyword">new</span> Dog(); <span class="comment">// Dog 对象</span></span><br><span class="line"> </span><br><span class="line">      a.move();<span class="comment">// 执行 Animal 类的方法</span></span><br><span class="line"> </span><br><span class="line">      b.move();<span class="comment">//执行 Dog 类的方法</span></span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>编译结果：</p>
 <blockquote>
-<p>职业： 前端工程师</p>
-<p>我的主页： <a href="http://www.haoyuekai.com/" target="_blank" rel="noopener">http://www.haoyuekai.com/</a></p>
-<p>github: <a href="https://github.com/haoyuekai/" target="_blank" rel="noopener">https://github.com/haoyuekai/</a></p>
-<p>联系方式： </p>
+<p>动物可以移动</p>
+<p>狗可以跑和走</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Animal</span></span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">move</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"动物可以移动"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Dog</span> <span class="keyword">extends</span> <span class="title">Animal</span></span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">move</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"狗可以跑和走"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">bark</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"狗可以吠叫"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestDog</span></span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span></span>&#123;</span><br><span class="line">      Animal a = <span class="keyword">new</span> Animal(); <span class="comment">// Animal 对象</span></span><br><span class="line">      Animal b = <span class="keyword">new</span> Dog(); <span class="comment">// Dog 对象</span></span><br><span class="line"> </span><br><span class="line">      a.move();<span class="comment">// 执行 Animal 类的方法</span></span><br><span class="line">      b.move();<span class="comment">//执行 Dog 类的方法</span></span><br><span class="line">      b.bark();</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以上代买，b.bark()处抛出编译错误。注意<code>Animal b = new Dog();</code>和<code>Dog b = new Dog();</code></p>
+<p><strong>重写规则</strong>：</p>
+<ul>
+<li>参数列表必须完全与被重写方法的相同；</li>
+<li>返回类型必须完全与被重写方法的返回类型相同；</li>
+<li>访问权限不能比父类中被重写的方法的访问权限更低。例如：如果父类的一个方法被声明为public，那么在子类中重写该方法就不能声明为protected。</li>
+<li>父类的成员方法只能被它的子类重写。</li>
+<li>声明为final的方法不能被重写。</li>
+<li>声明为static的方法不能被重写，但是能够被再次声明。</li>
+<li>子类和父类在同一个包中，那么子类可以重写父类所有方法，除了声明为private和final的方法。</li>
+<li>子类和父类不在同一个包中，那么子类只能够重写父类的声明为public和protected的非final方法。</li>
+<li>重写的方法能够抛出任何非强制异常，无论被重写的方法是否抛出异常。但是，重写的方法不能抛出新的强制性异常，或者比被重写方法声明的更广泛的强制性异常，反之则可以。</li>
+<li>构造方法不能被重写。</li>
+<li>如果不能继承一个方法，则不能重写这个方法。</li>
+</ul>
+<p>当需要在子类中调用父类的被重写方法时，要使用super关键字。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Animal</span></span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">move</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"动物可以移动"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Dog</span> <span class="keyword">extends</span> <span class="title">Animal</span></span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">move</span><span class="params">()</span></span>&#123;</span><br><span class="line">      <span class="keyword">super</span>.move(); <span class="comment">// 应用super类的方法</span></span><br><span class="line">      System.out.println(<span class="string">"狗可以跑和走"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestDog</span></span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span></span>&#123;</span><br><span class="line"> </span><br><span class="line">      Animal b = <span class="keyword">new</span> Dog(); <span class="comment">// Dog 对象</span></span><br><span class="line">      b.move(); <span class="comment">//执行 Dog类的方法</span></span><br><span class="line"> </span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>以上实例编译运行结果如下：</p>
 <blockquote>
-<p>邮箱: <a href="mailto:hao18233132132@163.com" target="_blank" rel="noopener">hao18233132132@163.com</a></p>
-<p>QQ: 1013947123</p>
-<p>微信: 18811626300</p>
+<p>动物可以移动</p>
+<p>狗可以跑和走</p>
 </blockquote>
-</blockquote>
+<h3 id="重载-Overload"><a href="#重载-Overload" class="headerlink" title="重载(Overload)"></a>重载(Overload)</h3><p>重载(overloading) 是在一个类里面，方法名字相同，而参数不同。返回类型可以相同也可以不同。</p>
+<p>每个重载的方法（或者构造函数）都必须有一个独一无二的参数类型列表。</p>
+<p>最常用的地方就是构造器的重载。</p>
+<p><strong>重载规则</strong>:</p>
+<ul>
+<li>被重载的方法必须改变参数列表(参数个数或类型不一样)；</li>
+<li>被重载的方法可以改变返回类型；</li>
+<li>被重载的方法可以改变访问修饰符；</li>
+<li>被重载的方法可以声明新的或更广的检查异常；</li>
+<li>方法能够在同一个类中或者在一个子类中被重载。</li>
+<li>无法以返回值类型作为重载函数的区分标准。<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Overloading</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">test</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"test1"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">(<span class="keyword">int</span> a)</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"test2"</span>);</span><br><span class="line">    &#125;   </span><br><span class="line"> </span><br><span class="line">    <span class="comment">//以下两个参数类型顺序不同</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">test</span><span class="params">(<span class="keyword">int</span> a,String s)</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"test3"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"returntest3"</span>;</span><br><span class="line">    &#125;   </span><br><span class="line"> </span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">test</span><span class="params">(String s,<span class="keyword">int</span> a)</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"test4"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"returntest4"</span>;</span><br><span class="line">    &#125;   </span><br><span class="line"> </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        Overloading o = <span class="keyword">new</span> Overloading();</span><br><span class="line">        System.out.println(o.test());</span><br><span class="line">        o.test(<span class="number">1</span>);</span><br><span class="line">        System.out.println(o.test(<span class="number">1</span>,<span class="string">"test3"</span>));</span><br><span class="line">        System.out.println(o.test(<span class="string">"test4"</span>,<span class="number">1</span>));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="重写与重载之间的区别"><a href="#重写与重载之间的区别" class="headerlink" title="重写与重载之间的区别"></a>重写与重载之间的区别</h3><p><img src="/images/OverrideAndOverload1.jpg" alt="重写与重载之间的区别"></p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>方法的重写(Overriding)和重载(Overloading)是java多态性的不同表现，重写是父类与子类之间多态性的一种表现，重载可以理解成多态的具体表现形式。</p>
+<ul>
+<li>方法重载是一个类中定义了多个方法名相同,而他们的参数的数量不同或数量相同而类型和次序不同,则称为方法的重载(Overloading)。</li>
+<li>方法重写是在子类存在方法与父类的方法的名字相同,而且参数的个数与类型一样,返回值也一样的方法,就称为重写(Overriding)。</li>
+<li>方法重载是一个类的多态性表现,而方法重写是子类与父类的一种多态性表现。<br><img src="/images/OverrideAndOverload.png" alt="重写与重载之间的区别"></li>
+</ul>
 
-        
-      </div>
-      
-      
       
     </div>
     
     
     
+
+    
+	
+	
+	
+	  <div>
+	    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+	  </div>
+	
+	
+	
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Java面向对象/" rel="tag"># Java面向对象</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/07/02/继承/" rel="next" title="Java面向对象-继承">
+                <i class="fa fa-chevron-left"></i> Java面向对象-继承
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/07/04/多态/" rel="prev" title="Java面向对象-多态">
+                Java面向对象-多态 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -354,6 +541,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNzA4MS8xMzYxNw=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -374,8 +570,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -488,6 +693,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#重写-Override"><span class="nav-number">1.</span> <span class="nav-text">重写(Override)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重载-Overload"><span class="nav-number">2.</span> <span class="nav-text">重载(Overload)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重写与重载之间的区别"><span class="nav-number">3.</span> <span class="nav-text">重写与重载之间的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -662,6 +883,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 

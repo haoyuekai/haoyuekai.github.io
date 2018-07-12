@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-21T03:09:07.286Z</updated>
+  <updated>2018-07-12T10:05:28.371Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,217 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java面向对象-包</title>
+    <link href="http://yoursite.com/2018/07/12/package/"/>
+    <id>http://yoursite.com/2018/07/12/package/</id>
+    <published>2018-07-12T04:55:27.000Z</published>
+    <updated>2018-07-12T10:05:28.371Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;为了更好地组织类，Java 提供了包机制，用于区别类名的命名空间。&lt;/p&gt;
+&lt;h3 id=&quot;作用&quot;&gt;&lt;a href=&quot;#作用&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java面向对象" scheme="http://yoursite.com/tags/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java面向对象-接口</title>
+    <link href="http://yoursite.com/2018/07/09/Interface/"/>
+    <id>http://yoursite.com/2018/07/09/Interface/</id>
+    <published>2018-07-09T13:35:12.000Z</published>
+    <updated>2018-07-12T10:05:24.131Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;接口用interface来声明，他不是类，而是抽象方法的集合。接口则包含类要实现的方法。&lt;br&gt;一个类通过继承接口的方式实现接口的方法。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;接口特性&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;接口中每一个方法也是隐式抽象的,接口中的方法会被隐
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java面向对象" scheme="http://yoursite.com/tags/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java面向对象-封装</title>
+    <link href="http://yoursite.com/2018/07/07/encapsulation/"/>
+    <id>http://yoursite.com/2018/07/07/encapsulation/</id>
+    <published>2018-07-07T14:05:01.000Z</published>
+    <updated>2018-07-12T10:05:20.096Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在面向对象程式设计方法中，封装是指一种将抽象性函式接口的实现细节部份包装、隐藏起来的方法。&lt;br&gt;封装可以被认为是一个保护屏障，防止该类的代码和数据被外部类定义的代码随机访问。&lt;br&gt;要访问该类的代码和数据，必须通过严格的接口控制。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;封装的优点
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java面向对象" scheme="http://yoursite.com/tags/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java面向对象-抽象类</title>
+    <link href="http://yoursite.com/2018/07/05/%E6%8A%BD%E8%B1%A1%E7%B1%BB/"/>
+    <id>http://yoursite.com/2018/07/05/抽象类/</id>
+    <published>2018-07-05T11:45:06.000Z</published>
+    <updated>2018-07-12T10:05:16.598Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在面向对象的概念中，所有的对象都是通过类来描绘的，但是反过来，并不是所有的类都是用来描绘对象的，如果一个类中没有包含足够的信息来描绘一个具体的对象，这样的类就是抽象类。&lt;/p&gt;
+&lt;p&gt;抽象类除了不能实例化对象之外，类的其它功能依然存在，成员变量、成员方法和构造方法的访问方式
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java面向对象" scheme="http://yoursite.com/tags/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java面向对象-多态</title>
+    <link href="http://yoursite.com/2018/07/04/%E5%A4%9A%E6%80%81/"/>
+    <id>http://yoursite.com/2018/07/04/多态/</id>
+    <published>2018-07-04T08:57:43.000Z</published>
+    <updated>2018-07-12T10:05:12.795Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;多态是指同一个行为具有多个不同表现形式或形态的能力。就是同一个接口，使用不同的实例而执行不同操作。&lt;/p&gt;
+&lt;p&gt;多态性是对象多种表现形式的体现。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;多态的优点&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;消除类型之间的耦合关系&lt;/li&gt;
+&lt;l
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java面向对象" scheme="http://yoursite.com/tags/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java面向对象-重写(Override)和重载(Overload)</title>
+    <link href="http://yoursite.com/2018/07/03/%E9%87%8D%E5%86%99%E5%92%8C%E9%87%8D%E8%BD%BD/"/>
+    <id>http://yoursite.com/2018/07/03/重写和重载/</id>
+    <published>2018-07-03T03:05:24.000Z</published>
+    <updated>2018-07-12T10:05:06.747Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;重写-Override&quot;&gt;&lt;a href=&quot;#重写-Override&quot; class=&quot;headerlink&quot; title=&quot;重写(Override)&quot;&gt;&lt;/a&gt;重写(Override)&lt;/h3&gt;&lt;p&gt;重写是子类对父类的允许访问的方法的实现过程进行重新编写,
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java面向对象" scheme="http://yoursite.com/tags/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java面向对象-继承</title>
+    <link href="http://yoursite.com/2018/07/02/%E7%BB%A7%E6%89%BF/"/>
+    <id>http://yoursite.com/2018/07/02/继承/</id>
+    <published>2018-07-02T09:48:14.000Z</published>
+    <updated>2018-07-12T10:04:43.646Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;关键字&quot;&gt;&lt;a href=&quot;#关键字&quot; class=&quot;headerlink&quot; title=&quot;关键字&quot;&gt;&lt;/a&gt;关键字&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;extend&lt;/strong&gt;：只能继承一个类。&lt;br&gt;&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java面向对象" scheme="http://yoursite.com/tags/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue_assembly</title>
+    <link href="http://yoursite.com/2018/06/21/vue-assembly/"/>
+    <id>http://yoursite.com/2018/06/21/vue-assembly/</id>
+    <published>2018-06-21T03:17:54.000Z</published>
+    <updated>2018-06-21T07:13:06.220Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Vue" scheme="http://yoursite.com/categories/Vue/"/>
+    
+    
+      <category term="Vue组件" scheme="http://yoursite.com/tags/Vue%E7%BB%84%E4%BB%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>新奇好玩的CSS</title>
@@ -31,32 +242,6 @@
         
           &lt;p&gt;最近在&lt;a href=&quot;https://www.w3cplus.com/blog&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;大漠&lt;/a&gt;的博客中看到好很多有意思的css效果，今天稍微整理一下。只做基本效果展示。&lt;/p&gt;
 &lt;h2
-        
-      
-    
-    </summary>
-    
-      <category term="Css" scheme="http://yoursite.com/categories/Css/"/>
-    
-    
-      <category term="Css" scheme="http://yoursite.com/tags/Css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Css画QQ企鹅</title>
-    <link href="http://yoursite.com/2018/06/12/Css-QQ/"/>
-    <id>http://yoursite.com/2018/06/12/Css-QQ/</id>
-    <published>2018-06-12T07:08:07.000Z</published>
-    <updated>2018-06-13T04:17:10.646Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot;
         
       
     
@@ -97,11 +282,37 @@
   </entry>
   
   <entry>
+    <title>Css画QQ企鹅</title>
+    <link href="http://yoursite.com/2017/02/28/Css-QQ/"/>
+    <id>http://yoursite.com/2017/02/28/Css-QQ/</id>
+    <published>2017-02-28T07:08:07.000Z</published>
+    <updated>2018-06-21T07:49:39.201Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Css" scheme="http://yoursite.com/categories/Css/"/>
+    
+    
+      <category term="Css" scheme="http://yoursite.com/tags/Css/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2018/06/04/hello-world/"/>
-    <id>http://yoursite.com/2018/06/04/hello-world/</id>
-    <published>2018-06-04T08:16:55.056Z</published>
-    <updated>2018-06-08T01:49:22.937Z</updated>
+    <link href="http://yoursite.com/2017/02/26/hello-world/"/>
+    <id>http://yoursite.com/2017/02/26/hello-world/</id>
+    <published>2017-02-26T07:08:07.000Z</published>
+    <updated>2018-06-21T07:45:58.637Z</updated>
     
     <summary type="html">
     
