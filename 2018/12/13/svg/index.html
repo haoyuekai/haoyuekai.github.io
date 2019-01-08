@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="svg基础形状 矩形 rect  圆形 circle  椭圆 ellipse  线 line  折线 polyline  多边形 polygon  路径 path   M = moveto L = lineto H = horizontal lineto V = vertical lineto C = curveto S = smooth curveto Q = quadratic Belzier">
+<meta name="description" content="原生svg基础形状 矩形 rect  圆形 circle  椭圆 ellipse  线 line  折线 polyline  多边形 polygon  路径 path   M = moveto L = lineto H = horizontal lineto V = vertical lineto C = curveto ‘C x1 y1 x2 y2 x y’ 三次贝塞尔曲线 S = smooth">
 <meta name="keywords" content="svg">
 <meta property="og:type" content="article">
 <meta property="og:title" content="svg">
 <meta property="og:url" content="http://yoursite.com/2018/12/13/svg/index.html">
 <meta property="og:site_name" content="竹林居士">
-<meta property="og:description" content="svg基础形状 矩形 rect  圆形 circle  椭圆 ellipse  线 line  折线 polyline  多边形 polygon  路径 path   M = moveto L = lineto H = horizontal lineto V = vertical lineto C = curveto S = smooth curveto Q = quadratic Belzier">
+<meta property="og:description" content="原生svg基础形状 矩形 rect  圆形 circle  椭圆 ellipse  线 line  折线 polyline  多边形 polygon  路径 path   M = moveto L = lineto H = horizontal lineto V = vertical lineto C = curveto ‘C x1 y1 x2 y2 x y’ 三次贝塞尔曲线 S = smooth">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-21T07:49:50.703Z">
+<meta property="og:updated_time" content="2019-01-08T03:49:32.415Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="svg">
-<meta name="twitter:description" content="svg基础形状 矩形 rect  圆形 circle  椭圆 ellipse  线 line  折线 polyline  多边形 polygon  路径 path   M = moveto L = lineto H = horizontal lineto V = vertical lineto C = curveto S = smooth curveto Q = quadratic Belzier">
+<meta name="twitter:description" content="原生svg基础形状 矩形 rect  圆形 circle  椭圆 ellipse  线 line  折线 polyline  多边形 polygon  路径 path   M = moveto L = lineto H = horizontal lineto V = vertical lineto C = curveto ‘C x1 y1 x2 y2 x y’ 三次贝塞尔曲线 S = smooth">
 
 
 
@@ -362,7 +362,7 @@
       
 
       
-        <h2 id="svg"><a href="#svg" class="headerlink" title="svg"></a>svg</h2><h3 id="基础形状"><a href="#基础形状" class="headerlink" title="基础形状"></a>基础形状</h3><ul>
+        <h2 id="原生svg"><a href="#原生svg" class="headerlink" title="原生svg"></a>原生svg</h2><h3 id="基础形状"><a href="#基础形状" class="headerlink" title="基础形状"></a>基础形状</h3><ul>
 <li><p>矩形 rect</p>
 </li>
 <li><p>圆形 circle</p>
@@ -382,11 +382,11 @@
 <li>L = lineto</li>
 <li>H = horizontal lineto</li>
 <li>V = vertical lineto</li>
-<li>C = curveto</li>
-<li>S = smooth curveto</li>
-<li>Q = quadratic Belzier curve</li>
-<li>T = smooth quadratic Belzier curveto</li>
-<li>A = elliptical Arc</li>
+<li>C = curveto ‘C x1 y1 x2 y2 x y’ 三次贝塞尔曲线</li>
+<li>S = smooth curveto ‘S x2 y2 x y’ 简化的贝塞尔曲线</li>
+<li>Q = quadratic Belzier curve ‘Q x1 y1 x y’ 二次贝塞尔曲线Q</li>
+<li>T = smooth quadratic Belzier curveto Q命令的简写命令</li>
+<li>A = elliptical Arc ‘A rx,ry x-axis-rotation large-arc-flag sweep-flag x,y’</li>
 <li>Z = closepath</li>
 </ul>
 <p>注释：以上所有命令均允许小写字母。大写表示绝对定位，小写表示相对定位。</p>
@@ -395,7 +395,7 @@
 </ul>
 <iframe id="cp_embed_QzjxVN" src="//codepen.io/haoyuekai/embed/QzjxVN?height=450]&theme-id=dark&slug-hash=QzjxVN&default-tab=[html,css,result" scrolling="no" frameborder="no" height="450]" allowtransparency="true" allowfullscreen="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe>
 <h3 id="基础属性"><a href="#基础属性" class="headerlink" title="基础属性"></a>基础属性</h3><ul>
-<li><p>viewBox 视窗(x,y,width,height)</p>
+<li><p>viewBox 视窗(x,y,width,height)<br><a href="https://www.sarasoueidan.com/demos/interactive-svg-coordinate-system/index.html" target="_blank" rel="noopener">视窗,viewBox和preserveAspectRatio</a></p>
 </li>
 <li><p>描边（stroke stroke-width stroke-opacity stroke-linejoin stroke-linecap stroke-miterlimit stroke-dasharray stroke-dashoffset ）</p>
 <ul>
@@ -433,7 +433,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="常用svg标签"><a href="#常用svg标签" class="headerlink" title="常用svg标签"></a>常用svg标签</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">g</span>&gt;</span><span class="tag">&lt;/<span class="name">g</span>&gt;</span> //对svg元素进行分组，添加公共的属性 </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">defs</span>&gt;</span><span class="tag">&lt;/<span class="name">defs</span>&gt;</span> // 预定义svg图像，用于重复使用，被此标签包裹的svg元素，不会绘制到画布上，一般和<span class="tag">&lt;<span class="name">use</span>/&gt;</span>搭配使用，<span class="tag">&lt;<span class="name">use</span>&gt;</span>引用的id是<span class="tag">&lt;<span class="name">defs</span>&gt;</span>包含的元素</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">symbol</span>&gt;</span><span class="tag">&lt;/<span class="name">symbol</span>&gt;</span>和<span class="tag">&lt;<span class="name">def</span>&gt;</span>类似，此元素可以有preserveAspectRatio和viewBox属性。而<span class="tag">&lt;<span class="name">g</span>&gt;</span>元素不能拥有这些属性。因此相比于在<span class="tag">&lt;<span class="name">defs</span>&gt;</span>元素中使用<span class="tag">&lt;<span class="name">g</span>&gt;</span>的方式来复用图形，使用<span class="tag">&lt;<span class="name">symbol</span>&gt;</span>元素也许是一个更好的选择，<span class="tag">&lt;<span class="name">use</span>&gt;</span>引用<span class="tag">&lt;<span class="name">symbol</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">use</span>&gt;</span> 引用svg代码，属性（xlink:href=`$&#123;id&#125;` x y）</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">text</span>&gt;</span><span class="tag">&lt;/<span class="name">text</span>&gt;</span>  // 属性和html,css类似, 注意：x,y 是文字左下角的坐标</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">image</span> <span class="attr">xlink:href</span>=<span class="string">"url"</span>&gt;</span><span class="tag">&lt;/<span class="name">image</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">filter</span>&gt;</span> // 滤镜，定义在<span class="tag">&lt;<span class="name">defs</span>&gt;</span>中,被其他元素引用<span class="tag">&lt;<span class="name">tag</span> <span class="attr">filter:url</span>(<span class="attr">id</span>)/&gt;</span></span><br><span class="line"></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<h3 id="常用svg标签"><a href="#常用svg标签" class="headerlink" title="常用svg标签"></a>常用svg标签</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">g</span>&gt;</span><span class="tag">&lt;/<span class="name">g</span>&gt;</span> //对svg元素进行分组，添加公共的属性 </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">defs</span>&gt;</span><span class="tag">&lt;/<span class="name">defs</span>&gt;</span> // 预定义svg图像，用于重复使用，被此标签包裹的svg元素，不会绘制到画布上，一般和<span class="tag">&lt;<span class="name">use</span>/&gt;</span>搭配使用，<span class="tag">&lt;<span class="name">use</span>&gt;</span>引用的id是<span class="tag">&lt;<span class="name">defs</span>&gt;</span>包含的元素</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">symbol</span>&gt;</span><span class="tag">&lt;/<span class="name">symbol</span>&gt;</span>和<span class="tag">&lt;<span class="name">def</span>&gt;</span>类似，此元素可以有preserveAspectRatio和viewBox属性。而<span class="tag">&lt;<span class="name">g</span>&gt;</span>元素不能拥有这些属性。因此相比于在<span class="tag">&lt;<span class="name">defs</span>&gt;</span>元素中使用<span class="tag">&lt;<span class="name">g</span>&gt;</span>的方式来复用图形，使用<span class="tag">&lt;<span class="name">symbol</span>&gt;</span>元素也许是一个更好的选择，<span class="tag">&lt;<span class="name">use</span>&gt;</span>引用<span class="tag">&lt;<span class="name">symbol</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">use</span>&gt;</span> 引用svg代码，属性（xlink:href=`$&#123;id&#125;` x y）</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">text</span>&gt;</span><span class="tag">&lt;/<span class="name">text</span>&gt;</span>  // 属性和html,css类似, 注意：x,y 是文字左下角的坐标</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">image</span> <span class="attr">xlink:href</span>=<span class="string">"url"</span>&gt;</span><span class="tag">&lt;/<span class="name">image</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">filter</span>&gt;</span> // 滤镜，定义在<span class="tag">&lt;<span class="name">defs</span>&gt;</span>中,被其他元素引用<span class="tag">&lt;<span class="name">tag</span> <span class="attr">filter:url</span>(<span class="attr">id</span>)/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">svg</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">defs</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter</span> <span class="attr">id</span>=<span class="string">"Gaussian_Blur"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">feGaussianBlur</span> <span class="attr">in</span>=<span class="string">"SourceGraphic"</span> <span class="attr">stdDeviation</span>=<span class="string">"3"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">filter</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">defs</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">rect</span> <span class="attr">x</span>=<span class="string">20</span> <span class="attr">y</span>=<span class="string">20</span> <span class="attr">width</span>=<span class="string">100</span> <span class="attr">height</span>=<span class="string">50</span> <span class="attr">style</span>=<span class="string">"fill:#ff0000;stroke:#000000;stroke-width:2;filter:url(#Gaussian_Blur)"</span>&gt;</span><span class="tag">&lt;/<span class="name">rect</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
 <h3 id="svg方法"><a href="#svg方法" class="headerlink" title="svg方法"></a>svg方法</h3><ul>
 <li>path.getPointAtLength(number)</li>
 <li>path.getTotalLength()</li>
@@ -450,6 +450,18 @@
 </blockquote>
 </li>
 </ul>
+<h3 id="svg交互"><a href="#svg交互" class="headerlink" title="svg交互"></a>svg交互</h3><ul>
+<li>标签交互<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 写在目标标签内 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">set</span> <span class="attr">attributeName</span>=<span class="string">"fill"</span> <span class="attr">from</span>=<span class="string">"lightgrey"</span> <span class="attr">to</span>=<span class="string">"red"</span> <span class="attr">begin</span>=<span class="string">"mouseover"</span> <span class="attr">end</span>=<span class="string">"mouseout"</span> /&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 通过id控制其他目标元素 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">set</span> <span class="attr">attributeName</span>=<span class="string">"fill"</span> <span class="attr">from</span>=<span class="string">"black"</span> <span class="attr">to</span>=<span class="string">"red"</span> <span class="attr">begin</span>=<span class="string">"changeToRed.mouseover"</span> <span class="attr">end</span>=<span class="string">"changeToRed.mouseout"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<iframe id="cp_embed_XoqPBM" src="//codepen.io/haoyuekai/embed/XoqPBM?height=300]&theme-id=dark&slug-hash=XoqPBM&default-tab=[html,css,result" scrolling="no" frameborder="no" height="300]" allowtransparency="true" allowfullscreen="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 支持鼠标事件和键盘事件(?????) --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">animate</span> <span class="attr">attributeName</span>=<span class="string">"fill"</span> <span class="attr">from</span>=<span class="string">"blue"</span> <span class="attr">to</span>=<span class="string">"green"</span> <span class="attr">begin</span>=<span class="string">"mouseover"</span> <span class="attr">dur</span>=<span class="string">"2s"</span> <span class="attr">fill</span>=<span class="string">"restore"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>js<iframe id="cp_embed_zyaNPQ" src="//codepen.io/haoyuekai/embed/zyaNPQ?height=300]&theme-id=dark&slug-hash=zyaNPQ&default-tab=[html,js,result" scrolling="no" frameborder="no" height="300]" allowtransparency="true" allowfullscreen="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe>
+原文链接： <a href="https://www.w3cplus.com/svg/creating-a-star-to-heart-animation-with-svg-and-vanilla-javascript.html" target="_blank" rel="noopener">大漠</a></li>
+</ul>
+<hr>
+<h2 id="Snap-svg"><a href="#Snap-svg" class="headerlink" title="Snap.svg"></a>Snap.svg</h2><p><a href="http://snapsvg.io/" target="_blank" rel="noopener">官网</a></p>
 
       
     </div>
@@ -688,7 +700,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#svg"><span class="nav-number">1.</span> <span class="nav-text">svg</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基础形状"><span class="nav-number">1.1.</span> <span class="nav-text">基础形状</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基础属性"><span class="nav-number">1.2.</span> <span class="nav-text">基础属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用svg标签"><span class="nav-number">1.3.</span> <span class="nav-text">常用svg标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#svg方法"><span class="nav-number">1.4.</span> <span class="nav-text">svg方法</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#原生svg"><span class="nav-number">1.</span> <span class="nav-text">原生svg</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基础形状"><span class="nav-number">1.1.</span> <span class="nav-text">基础形状</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基础属性"><span class="nav-number">1.2.</span> <span class="nav-text">基础属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用svg标签"><span class="nav-number">1.3.</span> <span class="nav-text">常用svg标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#svg方法"><span class="nav-number">1.4.</span> <span class="nav-text">svg方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#svg交互"><span class="nav-number">1.5.</span> <span class="nav-text">svg交互</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Snap-svg"><span class="nav-number">2.</span> <span class="nav-text">Snap.svg</span></a></li></ol></div>
             
 
           </div>
@@ -715,7 +727,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
