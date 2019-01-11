@@ -1927,7 +1927,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff5313;
+  background: #0e8534;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2872,6 +2872,7 @@ img:hover {
   padding: 20px 0;
   color: #fff;
   background: #222;
+  text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .site-meta {
