@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-11T03:43:47.664Z</updated>
+  <updated>2019-10-11T06:44:04.887Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>css黑魔法</title>
+    <link href="http://yoursite.com/2019/09/26/css%E9%BB%91%E9%AD%94%E6%B3%95/"/>
+    <id>http://yoursite.com/2019/09/26/css黑魔法/</id>
+    <published>2019-09-26T07:23:26.000Z</published>
+    <updated>2019-10-11T06:44:04.887Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;混合模式 (mix-blend-mode)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;属性描述了元素的内容应该与元素的直系父元素的内容和元素的背景如何混合&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;示例：&lt;br&gt;&lt;iframe
+        
+      
+    
+    </summary>
+    
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
     <title>svg</title>
     <link href="http://yoursite.com/2018/12/13/svg/"/>
     <id>http://yoursite.com/2018/12/13/svg/</id>
     <published>2018-12-13T03:10:49.000Z</published>
-    <updated>2019-01-11T03:43:47.664Z</updated>
+    <updated>2019-01-14T08:00:20.897Z</updated>
     
     <summary type="html">
     
