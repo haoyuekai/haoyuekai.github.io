@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-11T06:44:04.887Z</updated>
+  <updated>2019-10-11T06:59:03.605Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>umijs中使用Mock数据</title>
+    <link href="http://yoursite.com/2019/10/11/umijs%E4%B8%AD%E4%BD%BF%E7%94%A8Mock%E6%95%B0%E6%8D%AE/"/>
+    <id>http://yoursite.com/2019/10/11/umijs中使用Mock数据/</id>
+    <published>2019-10-11T06:46:47.000Z</published>
+    <updated>2019-10-11T06:59:03.605Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;Mock的使用方法及开启和关闭&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;umi 里约定 mock 文件夹下的文件或者 page(s) 文件夹下的 _mock 文件即 mock 文件。&lt;br&gt;默认开启 mock，值为 none
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>css黑魔法</title>

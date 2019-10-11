@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[umijs中使用Mock数据]]></title>
+    <url>%2F2019%2F10%2F11%2Fumijs%E4%B8%AD%E4%BD%BF%E7%94%A8Mock%E6%95%B0%E6%8D%AE%2F</url>
+    <content type="text"><![CDATA[Mock的使用方法及开启和关闭 umi 里约定 mock 文件夹下的文件或者 page(s) 文件夹下的 _mock 文件即 mock 文件。默认开启 mock，值为 none 时禁用。 MOCK=none umi dev 基本使用方法：12345678export default &#123; // 返回值支持值为 Object 和 Array 'GET /api/users': &#123; users: [1, 2] &#125;, // GET POST 可省略 '/api/users/1': &#123; id: 1 &#125;, // 支持自定义函数，API 参考 express@4 'POST /api/users/create': (req, res) =&gt; &#123; res.send('OK'); &#125;,&#125;; 注： 自定义函数不支持return。 2.1 自定义函数(express@4) 详细文档见express@4 request： req.cookies， req.params， req.body， req.query responce： res.setHeader() res.cookies(key, value[, options]) res.send() res.json() 2.2 Mock.js示例：1234567import mockjs from 'mockjs';export default &#123; // 使用 mockjs 等三方库 'GET /api/tags': mockjs.mock(&#123; 'list|100': [&#123; name: '@city', 'value|1-100': 50, 'type|0-2': 1 &#125;], &#125;),&#125;; mockjs模板规范： 属性名|规则：属性值 生成规则示例占位符通过@来引用]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[css黑魔法]]></title>
     <url>%2F2019%2F09%2F26%2Fcss%E9%BB%91%E9%AD%94%E6%B3%95%2F</url>
     <content type="text"><![CDATA[混合模式 (mix-blend-mode) 属性描述了元素的内容应该与元素的直系父元素的内容和元素的背景如何混合 示例： 分列（column） 规定列的宽度和列数 column-count: 元素的列数 column-gap: 元素列间距 column-rule: 元素的列的样式，类似border column-fill: 列样式的设定（balance ==&gt; 对列进行协调。浏览器应对列长度的差异进行最小化处理；auto ==&gt; 按顺序对列进行填充，列长度会各有不同。） 主流浏览器都不支持 column-fill 属性。 轮廓形状（shape-outside） 定义了一个可以是非矩形的形状，相邻的内联内容应围绕该形状进行包装 属性值：none、margin-box、content-box、border-box、padding-box 此外，还支持inset()、circle()、ellipse()、polygon()等方法创造的形状，以及图片（提取并且计算指定图片的alpha通道得出浮动区域） 示例：]]></content>
