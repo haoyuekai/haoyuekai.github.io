@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="svg,">
+  <meta name="keywords" content="重学前端,">
 
 
 
@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="原生svg基础形状 矩形 rect  圆形 circle  椭圆 ellipse  线 line  折线 polyline  多边形 polygon  路径 path   M = moveto L = lineto H = horizontal lineto V = vertical lineto C = curveto ‘C x1 y1 x2 y2 x y’ 三次贝塞尔曲线 S = smooth">
-<meta name="keywords" content="svg">
+<meta name="description" content="数组遍历深度优先遍历（DFS） 假设初始状态是图中所有顶点均未被访问，则从某个顶点v出发，首先访问该顶点然后依次从它的各个未被访问的邻接点出发深度优先搜索遍历图，直至图中所有和v有路径相通的顶点都被访问到。若此时尚有其他顶点未被访问到，则另选一个未被访问的顶点作起始点，重复上述过程，直至图中所有顶点都被访问到为止。  1234567891011121314151617181920212223242">
+<meta name="keywords" content="重学前端">
 <meta property="og:type" content="article">
-<meta property="og:title" content="svg">
-<meta property="og:url" content="http://yoursite.com/2018/12/13/svg/index.html">
+<meta property="og:title" content="重学前端（遍历和拷贝）">
+<meta property="og:url" content="http://yoursite.com/2020/08/04/重学前端（二）/index.html">
 <meta property="og:site_name" content="竹林居士">
-<meta property="og:description" content="原生svg基础形状 矩形 rect  圆形 circle  椭圆 ellipse  线 line  折线 polyline  多边形 polygon  路径 path   M = moveto L = lineto H = horizontal lineto V = vertical lineto C = curveto ‘C x1 y1 x2 y2 x y’ 三次贝塞尔曲线 S = smooth">
+<meta property="og:description" content="数组遍历深度优先遍历（DFS） 假设初始状态是图中所有顶点均未被访问，则从某个顶点v出发，首先访问该顶点然后依次从它的各个未被访问的邻接点出发深度优先搜索遍历图，直至图中所有和v有路径相通的顶点都被访问到。若此时尚有其他顶点未被访问到，则另选一个未被访问的顶点作起始点，重复上述过程，直至图中所有顶点都被访问到为止。  1234567891011121314151617181920212223242">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-14T08:00:20.897Z">
+<meta property="og:updated_time" content="2020-08-05T02:47:44.440Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="svg">
-<meta name="twitter:description" content="原生svg基础形状 矩形 rect  圆形 circle  椭圆 ellipse  线 line  折线 polyline  多边形 polygon  路径 path   M = moveto L = lineto H = horizontal lineto V = vertical lineto C = curveto ‘C x1 y1 x2 y2 x y’ 三次贝塞尔曲线 S = smooth">
+<meta name="twitter:title" content="重学前端（遍历和拷贝）">
+<meta name="twitter:description" content="数组遍历深度优先遍历（DFS） 假设初始状态是图中所有顶点均未被访问，则从某个顶点v出发，首先访问该顶点然后依次从它的各个未被访问的邻接点出发深度优先搜索遍历图，直至图中所有和v有路径相通的顶点都被访问到。若此时尚有其他顶点未被访问到，则另选一个未被访问的顶点作起始点，重复上述过程，直至图中所有顶点都被访问到为止。  1234567891011121314151617181920212223242">
 
 
 
@@ -129,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/12/13/svg/">
+  <link rel="canonical" href="http://yoursite.com/2020/08/04/重学前端（二）/">
 
 
 
 
 
-  <title>svg | 竹林居士</title>
+  <title>重学前端（遍历和拷贝） | 竹林居士</title>
   
 
 
@@ -295,7 +295,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/13/svg/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/04/重学前端（二）/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="竹林居士">
@@ -312,7 +312,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">svg</h1>
+          <h1 class="post-title" itemprop="name headline">重学前端（遍历和拷贝）</h1>
         
 
         <div class="post-meta">
@@ -324,8 +324,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-13T11:10:49+08:00">
-                2018-12-13
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-08-04T11:33:54+08:00">
+                2020-08-04
               </time>
             
 
@@ -362,116 +362,15 @@
       
 
       
-        <h2 id="原生svg"><a href="#原生svg" class="headerlink" title="原生svg"></a>原生svg</h2><h3 id="基础形状"><a href="#基础形状" class="headerlink" title="基础形状"></a>基础形状</h3><ul>
-<li><p>矩形 rect</p>
-</li>
-<li><p>圆形 circle</p>
-</li>
-<li><p>椭圆 ellipse</p>
-</li>
-<li><p>线 line</p>
-</li>
-<li><p>折线 polyline</p>
-</li>
-<li><p>多边形 polygon</p>
-</li>
-<li><p>路径 path</p>
-<blockquote>
-<ul>
-<li>M = moveto</li>
-<li>L = lineto</li>
-<li>H = horizontal lineto</li>
-<li>V = vertical lineto</li>
-<li>C = curveto ‘C x1 y1 x2 y2 x y’ 三次贝塞尔曲线</li>
-<li>S = smooth curveto ‘S x2 y2 x y’ 简化的贝塞尔曲线</li>
-<li>Q = quadratic Belzier curve ‘Q x1 y1 x y’ 二次贝塞尔曲线Q</li>
-<li>T = smooth quadratic Belzier curveto Q命令的简写命令</li>
-<li>A = elliptical Arc ‘A rx,ry x-axis-rotation large-arc-flag sweep-flag x,y’</li>
-<li>Z = closepath</li>
-</ul>
-<p>注释：以上所有命令均允许小写字母。大写表示绝对定位，小写表示相对定位。</p>
+        <h2 id="数组遍历"><a href="#数组遍历" class="headerlink" title="数组遍历"></a>数组遍历</h2><h3 id="深度优先遍历（DFS）"><a href="#深度优先遍历（DFS）" class="headerlink" title="深度优先遍历（DFS）"></a>深度优先遍历（DFS）</h3><blockquote>
+<p>假设初始状态是图中所有顶点均未被访问，则从某个顶点v出发，首先访问该顶点然后依次从它的各个未被访问的邻接点出发深度优先搜索遍历图，直至图中所有和v有路径相通的顶点都被访问到。若此时尚有其他顶点未被访问到，则另选一个未被访问的顶点作起始点，重复上述过程，直至图中所有顶点都被访问到为止。</p>
 </blockquote>
-</li>
-</ul>
-<iframe id="cp_embed_QzjxVN" src="//codepen.io/haoyuekai/embed/QzjxVN?height=450]&theme-id=dark&slug-hash=QzjxVN&default-tab=[html,css,result" scrolling="no" frameborder="no" height="450]" allowtransparency="true" allowfullscreen="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe>
-<p>贝塞尔曲线： </p>
-<iframe id="cp_embed_mewdyZ" src="//codepen.io/anthonydugois/embed/mewdyZ?height=800]&theme-id=dark&slug-hash=mewdyZ&default-tab=[html,css,result" scrolling="no" frameborder="no" height="800]" allowtransparency="true" allowfullscreen="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe>
-<h3 id="基础属性"><a href="#基础属性" class="headerlink" title="基础属性"></a>基础属性</h3><ul>
-<li>viewBox 视窗(x,y,width,height)</li>
-</ul>
-<iframe id="cp_embed_qLJXpE" src="//codepen.io/haoyuekai/embed/qLJXpE?height=600]&theme-id=dark&slug-hash=qLJXpE&default-tab=[html,css,js,result" scrolling="no" frameborder="no" height="600]" allowtransparency="true" allowfullscreen="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe>
-<!-- <a href="https://www.sarasoueidan.com/demos/interactive-svg-coordinate-system/index.html">视窗,viewBox和preserveAspectRatio</a> -->
-<ul>
-<li><p>描边（stroke stroke-width stroke-opacity stroke-linejoin stroke-linecap stroke-miterlimit stroke-dasharray stroke-dashoffset ）</p>
-<ul>
-<li><p>stroke, stroke-width, stroke-opacity</p>
-</li>
-<li><p>stroke-linecap 线条两端样式： 对接(butt)、方形(square)和圆形(round)</p>
-</li>
-</ul>
-<iframe id="cp_embed_LMpmQb" src="//codepen.io/haoyuekai/embed/LMpmQb?height=300]&theme-id=dark&slug-hash=LMpmQb&default-tab=[html,css,result" scrolling="no" frameborder="no" height="300]" allowtransparency="true" allowfullscreen="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe>
-<ul>
-<li>stroke-linejoin 线条拐角样式： 尖角(miter)、圆角(round)和斜角(bevel)</li>
-</ul>
-<iframe id="cp_embed_XomYXN" src="//codepen.io/haoyuekai/embed/XomYXN?height=450]&theme-id=dark&slug-hash=XomYXN&default-tab=[html,css,js,result" scrolling="no" frameborder="no" height="450]" allowtransparency="true" allowfullscreen="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe>
-<ul>
-<li><p>stroke-miterlimit</p>
-<blockquote>
-<p>stroke-miterlimit 属性给 miter-length 和 stroke-width 之间的比率做了限制，它的比值范围应大于或等于1。当比值不在这个范围的时候， stroke 就会被转换成斜角（bevel）。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> deepTraversal1 = <span class="function">(<span class="params">node, nodeList = []</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (node !== <span class="literal">null</span>) &#123;</span><br><span class="line">    nodeList.push(node)</span><br><span class="line">    <span class="keyword">let</span> children = node.children</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; children.length; i++) &#123;</span><br><span class="line">      deepTraversal1(children[i], nodeList)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> nodeList</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> deepTraversal2 = <span class="function">(<span class="params">node</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> nodes = []</span><br><span class="line">    <span class="keyword">if</span> (node !== <span class="literal">null</span>) &#123;</span><br><span class="line">      nodes.push(node)</span><br><span class="line">      <span class="keyword">let</span> children = node.children</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; children.length; i++) &#123;</span><br><span class="line">        nodes = nodes.concat(deepTraversal2(children[i]))</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> nodes</span><br><span class="line">  &#125;</span><br><span class="line"><span class="comment">// 非递归</span></span><br><span class="line"><span class="keyword">let</span> deepTraversal3 = <span class="function">(<span class="params">node</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> stack = []</span><br><span class="line">  <span class="keyword">let</span> nodes = []</span><br><span class="line">  <span class="keyword">if</span> (node) &#123;</span><br><span class="line">    <span class="comment">// 推入当前处理的node</span></span><br><span class="line">    stack.push(node)</span><br><span class="line">    <span class="keyword">while</span> (stack.length) &#123;</span><br><span class="line">      <span class="keyword">let</span> item = stack.pop()</span><br><span class="line">      <span class="keyword">let</span> children = item.children</span><br><span class="line">      nodes.push(item)</span><br><span class="line">      <span class="comment">// node = [] stack = [parent]</span></span><br><span class="line">      <span class="comment">// node = [parent] stack = [child3,child2,child1]</span></span><br><span class="line">      <span class="comment">// node = [parent, child1] stack = [child3,child2,child1-2,child1-1]</span></span><br><span class="line">      <span class="comment">// node = [parent, child1-1] stack = [child3,child2,child1-2]</span></span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">let</span> i = children.length - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">        stack.push(children[i])</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> nodes</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="广度优先遍历（BFS）"><a href="#广度优先遍历（BFS）" class="headerlink" title="广度优先遍历（BFS）"></a>广度优先遍历（BFS）</h3><blockquote>
+<p>从图中某顶点v出发，在访问了v之后依次访问v的各个未曾访问过的邻接点，然后分别从这些邻接点出发依次访问它们的邻接点，并使得“先被访问的顶点的邻接点先于后被访问的顶点的邻接点被访问，直至图中所有已被访问的顶点的邻接点都被访问到。 如果此时图中尚有顶点未被访问，则需要另选一个未曾被访问过的顶点作为新的起始点，重复上述过程，直至图中所有顶点都被访问到为止。</p>
 </blockquote>
-</li>
-<li><p>stroke-dasharray(虚线) stroke-dashoffset(x线条起始点)</p>
-<blockquote>
-<p>stroke-dasharray 参数： 第一个值是划线的长度，第二个值是各个划线之间的空格大小 （可接受多组参数，循环）</p>
-</blockquote>
-</li>
-</ul>
-<iframe id="cp_embed_MZaXJe" src="//codepen.io/haoyuekai/embed/MZaXJe?height=400]&theme-id=dark&slug-hash=MZaXJe&default-tab=[html,css,result" scrolling="no" frameborder="no" height="400]" allowtransparency="true" allowfullscreen="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe>
-</li>
-<li><p>填充（fill fill-rule fill-opacity）</p>
-<ul>
-<li>fill-rull (nonzero evenodd inherit)<blockquote>
-<p>nonzero—这个规则通过从canvas上的某个点往任一方向绘制射线到无穷远，然后检查图形的线段和射线相交的点，来确定“内部区域”。从0开始计数，每次路径线段是从左到右穿过射线就加一，从右到左的就减一。通过计算交叉点，如果结果是0，则这个点在路径外边，不然，就是在里边。</p>
-<p>evenodd—这个规则通过从canvas上某个点往任一方向绘制射线到无穷远，然后计算给定图形上线段路径和该射线交叉点的数量。如果这个数是奇数，那么该点在图形内部；如果是偶数，该点在图形外部。</p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-<p>综合实例：<br><iframe id="cp_embed_zymdEQ" src="//codepen.io/haoyuekai/embed/zymdEQ?height=800]&theme-id=dark&slug-hash=zymdEQ&default-tab=[html,css,result" scrolling="no" frameborder="no" height="800]" allowtransparency="true" allowfullscreen="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe></p>
-<h3 id="常用svg标签"><a href="#常用svg标签" class="headerlink" title="常用svg标签"></a>常用svg标签</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">g</span>&gt;</span><span class="tag">&lt;/<span class="name">g</span>&gt;</span> //对svg元素进行分组，添加公共的属性 </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">defs</span>&gt;</span><span class="tag">&lt;/<span class="name">defs</span>&gt;</span> // 预定义svg图像，用于重复使用，被此标签包裹的svg元素，不会绘制到画布上，一般和<span class="tag">&lt;<span class="name">use</span>/&gt;</span>搭配使用，<span class="tag">&lt;<span class="name">use</span>&gt;</span>引用的id是<span class="tag">&lt;<span class="name">defs</span>&gt;</span>包含的元素</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">symbol</span>&gt;</span><span class="tag">&lt;/<span class="name">symbol</span>&gt;</span>和<span class="tag">&lt;<span class="name">def</span>&gt;</span>类似，此元素可以有preserveAspectRatio和viewBox属性。而<span class="tag">&lt;<span class="name">g</span>&gt;</span>元素不能拥有这些属性。因此相比于在<span class="tag">&lt;<span class="name">defs</span>&gt;</span>元素中使用<span class="tag">&lt;<span class="name">g</span>&gt;</span>的方式来复用图形，使用<span class="tag">&lt;<span class="name">symbol</span>&gt;</span>元素也许是一个更好的选择，<span class="tag">&lt;<span class="name">use</span>&gt;</span>引用<span class="tag">&lt;<span class="name">symbol</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">use</span>&gt;</span> 引用svg代码，属性（xlink:href=`$&#123;id&#125;` x y）</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">text</span>&gt;</span><span class="tag">&lt;/<span class="name">text</span>&gt;</span>  // 属性和html,css类似, 注意：x,y 是文字左下角的坐标</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">image</span> <span class="attr">xlink:href</span>=<span class="string">"url"</span>&gt;</span><span class="tag">&lt;/<span class="name">image</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">filter</span>&gt;</span> // 滤镜，定义在<span class="tag">&lt;<span class="name">defs</span>&gt;</span>中,被其他元素引用<span class="tag">&lt;<span class="name">tag</span> <span class="attr">filter:url</span>(<span class="attr">id</span>)/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">svg</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">defs</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter</span> <span class="attr">id</span>=<span class="string">"Gaussian_Blur"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">feGaussianBlur</span> <span class="attr">in</span>=<span class="string">"SourceGraphic"</span> <span class="attr">stdDeviation</span>=<span class="string">"3"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">filter</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">defs</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">rect</span> <span class="attr">x</span>=<span class="string">20</span> <span class="attr">y</span>=<span class="string">20</span> <span class="attr">width</span>=<span class="string">100</span> <span class="attr">height</span>=<span class="string">50</span> <span class="attr">style</span>=<span class="string">"fill:#ff0000;stroke:#000000;stroke-width:2;filter:url(#Gaussian_Blur)"</span>&gt;</span><span class="tag">&lt;/<span class="name">rect</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-<h3 id="svg方法"><a href="#svg方法" class="headerlink" title="svg方法"></a>svg方法</h3><ul>
-<li>path.getPointAtLength(number)</li>
-<li>path.getTotalLength()</li>
-<li>element.remove()<blockquote>
-<ul>
-<li>SVGLoad（onload）：当客户端完全解析了SVG文档或者其中的元素，或者所需的外部资源已经准好的时候会触发此事件，此时已经准备开始渲染SVG图像。</li>
-<li>SVGUnload（onunload）：当SVG文档从浏览器窗口或者某个框架中被删除后会触发此事件</li>
-<li>SVGAbort（onabort）：当正在载入的文档或者元素被中止时会触发此事件。</li>
-<li>SVGError（onerror）：当载入一个元素或者当执行脚本发生错误时，都会触发此事件。</li>
-<li>SVGResize（onresize）：当嵌入有SVG文档的浏览器窗口或者框架的尺寸发生改变时会触发此事件</li>
-<li>SVGScroll（onscroll）：当用户拖动窗口的滚动条或者浏览文档视图时，或当通过脚本改变了“currentTranslate”属性值时</li>
-<li>SVGZoom（onzoom ）：当用户缩放SVG文档视图时，或当通过脚本改变了“currentScale”属性值时</li>
-</ul>
-</blockquote>
-</li>
-</ul>
-<h3 id="svg交互"><a href="#svg交互" class="headerlink" title="svg交互"></a>svg交互</h3><ul>
-<li>标签交互<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 写在目标标签内 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">set</span> <span class="attr">attributeName</span>=<span class="string">"fill"</span> <span class="attr">from</span>=<span class="string">"lightgrey"</span> <span class="attr">to</span>=<span class="string">"red"</span> <span class="attr">begin</span>=<span class="string">"mouseover"</span> <span class="attr">end</span>=<span class="string">"mouseout"</span> /&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 通过id控制其他目标元素 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">set</span> <span class="attr">attributeName</span>=<span class="string">"fill"</span> <span class="attr">from</span>=<span class="string">"black"</span> <span class="attr">to</span>=<span class="string">"red"</span> <span class="attr">begin</span>=<span class="string">"changeToRed.mouseover"</span> <span class="attr">end</span>=<span class="string">"changeToRed.mouseout"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<iframe id="cp_embed_XoqPBM" src="//codepen.io/haoyuekai/embed/XoqPBM?height=500]&theme-id=dark&slug-hash=XoqPBM&default-tab=[html,css,result" scrolling="no" frameborder="no" height="500]" allowtransparency="true" allowfullscreen="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 支持鼠标事件和键盘事件(?????) --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">animate</span> <span class="attr">attributeName</span>=<span class="string">"fill"</span> <span class="attr">from</span>=<span class="string">"blue"</span> <span class="attr">to</span>=<span class="string">"green"</span> <span class="attr">begin</span>=<span class="string">"mouseover"</span> <span class="attr">dur</span>=<span class="string">"2s"</span> <span class="attr">fill</span>=<span class="string">"restore"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">animateMotion</span> <span class="attr">dur</span>=<span class="string">"2s"</span> <span class="attr">path</span>=<span class="string">''</span> <span class="attr">repeatCount</span>=<span class="string">2</span> /&gt;</span></span><br></pre></td></tr></table></figure>
-<iframe id="cp_embed_yGxXzP" src="//codepen.io/haoyuekai/embed/yGxXzP?height=400]&theme-id=dark&slug-hash=yGxXzP&default-tab=[html,css,result" scrolling="no" frameborder="no" height="400]" allowtransparency="true" allowfullscreen="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe>
-<ul>
-<li>js<iframe id="cp_embed_zyaNPQ" src="//codepen.io/haoyuekai/embed/zyaNPQ?height=300]&theme-id=dark&slug-hash=zyaNPQ&default-tab=[html,js,result" scrolling="no" frameborder="no" height="300]" allowtransparency="true" allowfullscreen="true" class="cp_embed_iframe" style="width: 100%; overflow: hidden;"></iframe>
-原文链接： <a href="https://www.w3cplus.com/svg/creating-a-star-to-heart-animation-with-svg-and-vanilla-javascript.html" target="_blank" rel="noopener">大漠</a><br>Path过渡动画类库： <a href="https://github.com/dntzhang/pasition/blob/master/docs/release.md" target="_blank" rel="noopener">pasition</a></li>
-</ul>
-<hr>
-<h2 id="js-to-draw-svg"><a href="#js-to-draw-svg" class="headerlink" title="js to draw svg"></a>js to draw svg</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// TODO</span></span><br></pre></td></tr></table></figure>
-<h2 id="Snap-svg"><a href="#Snap-svg" class="headerlink" title="Snap.svg"></a>Snap.svg</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> draw = Snap(<span class="string">'#svg'</span>)</span><br><span class="line"><span class="keyword">let</span> circle = draw.circle(<span class="number">150</span>, <span class="number">150</span>, <span class="number">100</span>).attr(&#123;</span><br><span class="line">  fill: <span class="string">'red'</span>,</span><br><span class="line">  stroke: <span class="string">'#000'</span>,</span><br><span class="line">  strokeWidth: <span class="number">2</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// ......</span></span><br></pre></td></tr></table></figure>
-<p><a href="http://snapsvg.io/" target="_blank" rel="noopener">官网</a></p>
-
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> widthTraversal2 = <span class="function">(<span class="params">node</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> nodes = []</span><br><span class="line">  <span class="keyword">let</span> stack = []</span><br><span class="line">  <span class="keyword">if</span> (node) &#123;</span><br><span class="line">    stack.push(node)</span><br><span class="line">    <span class="keyword">while</span> (stack.length) &#123;</span><br><span class="line">      <span class="keyword">let</span> item = stack.shift()</span><br><span class="line">      <span class="keyword">let</span> children = item.children</span><br><span class="line">      nodes.push(item)</span><br><span class="line">        <span class="comment">// 队列，先进先出</span></span><br><span class="line">        <span class="comment">// nodes = [] stack = [parent]</span></span><br><span class="line">        <span class="comment">// nodes = [parent] stack = [child1,child2,child3]</span></span><br><span class="line">        <span class="comment">// nodes = [parent, child1] stack = [child2,child3,child1-1,child1-2]</span></span><br><span class="line">        <span class="comment">// nodes = [parent,child1,child2]</span></span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; children.length; i++) &#123;</span><br><span class="line">        stack.push(children[i])</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> nodes</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="遍历实现拷贝"><a href="#遍历实现拷贝" class="headerlink" title="遍历实现拷贝"></a>遍历实现拷贝</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 深度优先遍历实现深拷贝</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">let</span> DFSdeepClone = <span class="function">(<span class="params">obj, visitedArr = []</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> _obj = &#123;&#125;</span><br><span class="line">  <span class="keyword">if</span> (<span class="built_in">Object</span>.prototype.toString.call(obj).slice(<span class="number">8</span>, <span class="number">-1</span>) === <span class="string">'Array'</span> || <span class="built_in">Object</span>.prototype.toString.call(item).slice(<span class="number">8</span>, <span class="number">-1</span>) === <span class="string">'Object'</span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> index = visitedArr.indexOf(obj)</span><br><span class="line">    _obj = <span class="built_in">Object</span>.prototype.toString.call(obj).slice(<span class="number">8</span>, <span class="number">-1</span>) === <span class="string">'Array'</span> ? [] : &#123;&#125;</span><br><span class="line">    <span class="keyword">if</span> (~index) &#123; <span class="comment">// 判断环状数据</span></span><br><span class="line">      _obj = visitedArr[index]</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      visitedArr.push(obj)</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">let</span> item <span class="keyword">in</span> obj) &#123;</span><br><span class="line">        _obj[item] = DFSdeepClone(obj[item], visitedArr)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">Object</span>.prototype.toString.call(obj).slice(<span class="number">8</span>, <span class="number">-1</span>) === <span class="string">'Function'</span>) &#123;</span><br><span class="line">    _obj = <span class="built_in">eval</span>(<span class="string">'('</span> + obj.toString() + <span class="string">')'</span>);</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    _obj = obj</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> _obj</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 广度优先遍历实现深拷贝 </span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">let</span> BFSdeepClone = <span class="function">(<span class="params">obj</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> origin = [obj],</span><br><span class="line">      copyObj = &#123;&#125;,</span><br><span class="line">      copy = [copyObj]</span><br><span class="line">      <span class="comment">// 去除环状数据</span></span><br><span class="line">    <span class="keyword">let</span> visitedQueue = [],</span><br><span class="line">      visitedCopyQueue = []</span><br><span class="line">    <span class="keyword">while</span> (origin.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">let</span> items = origin.shift(),</span><br><span class="line">          _obj = copy.shift()</span><br><span class="line">      visitedQueue.push(items)</span><br><span class="line">      <span class="keyword">if</span> (<span class="built_in">Object</span>.prototype.toString.call(items).slice(<span class="number">8</span>, <span class="number">-1</span>) === <span class="string">'Object'</span> || <span class="built_in">Object</span>.prototype.toString.call(items).slice(<span class="number">8</span>, <span class="number">-1</span>) === <span class="string">'Array'</span>) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> item <span class="keyword">in</span> items) &#123;</span><br><span class="line">          <span class="keyword">let</span> val = items[item]</span><br><span class="line">          <span class="keyword">if</span> (isTypeOf(val, <span class="string">'object'</span>)) &#123;</span><br><span class="line">            <span class="keyword">let</span> index = visitedQueue.indexOf(val)</span><br><span class="line">            <span class="keyword">if</span> (!~index) &#123;</span><br><span class="line">              _obj[item] = &#123;&#125;</span><br><span class="line">                <span class="comment">//下次while循环使用给空对象提供数据</span></span><br><span class="line">              origin.push(val)</span><br><span class="line">                <span class="comment">// 推入引用对象</span></span><br><span class="line">              copy.push(_obj[item])</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">              _obj[item] = visitedCopyQueue[index]</span><br><span class="line">              visitedQueue.push(_obj)</span><br><span class="line">            &#125;</span><br><span class="line">          &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">Object</span>.prototype.toString.call(val).slice(<span class="number">8</span>, <span class="number">-1</span>) === <span class="string">'Array'</span>) &#123;</span><br><span class="line">            <span class="comment">// 数组类型在这里创建了一个空数组</span></span><br><span class="line">            _obj[item] = []</span><br><span class="line">            origin.push(val)</span><br><span class="line">            copy.push(_obj[item])</span><br><span class="line">          &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">Object</span>.prototype.toString.call(val).slice(<span class="number">8</span>, <span class="number">-1</span>) === <span class="string">'Function'</span>)) &#123;</span><br><span class="line">            _obj[item] = <span class="built_in">eval</span>(<span class="string">'('</span> + val.toString() + <span class="string">')'</span>);</span><br><span class="line">          &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            _obj[item] = val</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 将已经处理过的对象数据推入数组 给环状数据使用</span></span><br><span class="line">        visitedCopyQueue.push(_obj)</span><br><span class="line">      &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">Object</span>.prototype.toString.call(items).slice(<span class="number">8</span>, <span class="number">-1</span>) === <span class="string">'Function'</span>)) &#123;</span><br><span class="line">        copyObj = <span class="built_in">eval</span>(<span class="string">'('</span> + items.toString() + <span class="string">')'</span>);</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        copyObj = obj</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  <span class="keyword">return</span> copyObj</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -500,7 +399,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/svg/" rel="tag"># svg</a>
+            <a href="/tags/重学前端/" rel="tag"># 重学前端</a>
           
         </div>
       
@@ -513,8 +412,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/13/Java学习笔记-数据结构/" rel="next" title="Java学习笔记-数据结构">
-                <i class="fa fa-chevron-left"></i> Java学习笔记-数据结构
+              <a href="/2020/07/16/重学前端/" rel="next" title="重学前端（-）">
+                <i class="fa fa-chevron-left"></i> 重学前端（-）
               </a>
             
           </div>
@@ -522,10 +421,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/09/26/css黑魔法/" rel="prev" title="css黑魔法">
-                css黑魔法 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -713,7 +608,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#原生svg"><span class="nav-number">1.</span> <span class="nav-text">原生svg</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基础形状"><span class="nav-number">1.1.</span> <span class="nav-text">基础形状</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基础属性"><span class="nav-number">1.2.</span> <span class="nav-text">基础属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用svg标签"><span class="nav-number">1.3.</span> <span class="nav-text">常用svg标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#svg方法"><span class="nav-number">1.4.</span> <span class="nav-text">svg方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#svg交互"><span class="nav-number">1.5.</span> <span class="nav-text">svg交互</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#js-to-draw-svg"><span class="nav-number">2.</span> <span class="nav-text">js to draw svg</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Snap-svg"><span class="nav-number">3.</span> <span class="nav-text">Snap.svg</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数组遍历"><span class="nav-number">1.</span> <span class="nav-text">数组遍历</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#深度优先遍历（DFS）"><span class="nav-number">1.1.</span> <span class="nav-text">深度优先遍历（DFS）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#广度优先遍历（BFS）"><span class="nav-number">1.2.</span> <span class="nav-text">广度优先遍历（BFS）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#遍历实现拷贝"><span class="nav-number">1.3.</span> <span class="nav-text">遍历实现拷贝</span></a></li></ol></li></ol></div>
             
 
           </div>
